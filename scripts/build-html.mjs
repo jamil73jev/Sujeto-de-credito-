@@ -2,7 +2,7 @@
  * Genera un único archivo HTML autocontenido (sin servidor) para probar el sitio.
  * Uso: npm run build:html [ruta-de-salida]   (requiere esbuild: npm i -D esbuild)
  */
-import { readFileSync, writeFileSync } from "node:fs";
+import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -60,5 +60,6 @@ const html = `<!doctype html>
 </html>
 `;
 
+mkdirSync(dirname(salida), { recursive: true });
 writeFileSync(salida, html);
 console.log(`HTML generado: ${salida} (${(html.length / 1024).toFixed(0)} KB)`);
