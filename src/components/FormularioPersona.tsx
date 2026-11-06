@@ -16,6 +16,7 @@ import {
   escenariosPersonaInforme,
   fichasPersona,
   type DatoDeclarado,
+  type FuentesInforme,
 } from "@/lib/informe";
 import { cuotaMensual } from "@/lib/cuota";
 import { formatoMoneda, formatoPct, parseNumero } from "@/lib/numeros";
@@ -34,6 +35,8 @@ interface Props {
   tasaConsumoPct: number | null;
   /** Documentos que la persona puede marcar como respaldables. */
   documentos: Array<{ id: string; etiqueta: string }>;
+  /** Datos del dataset para armar el informe (los prepara el servidor). */
+  fuentesInforme: FuentesInforme;
 }
 
 /** Valores de ejemplo para que el panel funcione desde el primer momento; se marcan como tales. */
@@ -72,6 +75,7 @@ export function FormularioPersona({
   descargoCorto,
   tasaConsumoPct,
   documentos,
+  fuentesInforme,
 }: Props) {
   const [f, setF] = useState(EJEMPLO);
   const [editado, setEditado] = useState(false);
@@ -256,8 +260,10 @@ export function FormularioPersona({
       documentos: documentosPersona(
         marcados,
         documentos.map((d) => d.id),
+        fuentesInforme,
       ),
       fichas: fichasPersona(),
+      fuentes: fuentesInforme,
     });
   };
 

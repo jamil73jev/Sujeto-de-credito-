@@ -23,6 +23,7 @@ import {
   escenariosEmpresaInforme,
   fichasEmpresa,
   type DatoDeclarado,
+  type FuentesInforme,
 } from "@/lib/informe";
 import { formatoMoneda, formatoPct, parseNumero } from "@/lib/numeros";
 import { PARAMETROS_EMPRESA } from "@/lib/parametros";
@@ -39,6 +40,8 @@ interface Props {
   benchmarks: Benchmark[];
   /** Nombres legibles por ratio (vienen del dataset de indicadores). */
   nombresRatio: Record<string, string>;
+  /** Datos del dataset para armar el informe (los prepara el servidor). */
+  fuentesInforme: FuentesInforme;
 }
 
 /** Valores de ejemplo (una pyme ficticia) para que el panel funcione desde el inicio; se marcan como tales. */
@@ -104,6 +107,7 @@ export function FormularioEmpresa({
   descargoCorto,
   benchmarks,
   nombresRatio,
+  fuentesInforme,
 }: Props) {
   const [f, setF] = useState(EJEMPLO);
   const [editado, setEditado] = useState(false);
@@ -308,8 +312,9 @@ export function FormularioEmpresa({
             PARAMETROS_EMPRESA.dscrMinimoReferencial,
           )
         : null,
-      documentos: documentosEmpresa(),
-      fichas: fichasEmpresa(idsCalculados),
+      documentos: documentosEmpresa(fuentesInforme),
+      fichas: fichasEmpresa(idsCalculados, fuentesInforme),
+      fuentes: fuentesInforme,
     });
   };
 

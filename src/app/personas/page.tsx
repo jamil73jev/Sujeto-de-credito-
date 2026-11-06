@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { FormularioPersona } from "@/components/FormularioPersona";
 import { FuenteTraza } from "@/components/FuenteTraza";
 import { datos } from "@/lib/datos";
+import { fuentesInforme } from "@/lib/informe-fuentes";
 
 export const metadata: Metadata = {
   title: "Personas",
@@ -32,6 +33,7 @@ export default function PaginaPersonas() {
         descargoCorto={t.descargo_corto}
         tasaConsumoPct={consumo?.tasa_referencial_pct ?? null}
         documentos={documentos}
+        fuentesInforme={fuentesInforme()}
       />
 
       <section className="mas">

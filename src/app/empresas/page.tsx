@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { FormularioEmpresa } from "@/components/FormularioEmpresa";
 import { FuenteTraza } from "@/components/FuenteTraza";
 import { datos } from "@/lib/datos";
+import { fuentesInforme } from "@/lib/informe-fuentes";
 
 export const metadata: Metadata = {
   title: "Empresas",
@@ -26,6 +27,7 @@ export default function PaginaEmpresas() {
         descargoCorto={t.descargo_corto}
         benchmarks={datos.benchmarks.registros}
         nombresRatio={nombresRatio}
+        fuentesInforme={fuentesInforme()}
       />
 
       <section className="mas">

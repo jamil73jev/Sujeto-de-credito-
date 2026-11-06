@@ -13,11 +13,14 @@ import {
   recomendacionesPriorizadas,
   reglasAplicadas,
 } from "../src/lib/informe";
+import { fuentesInforme } from "../src/lib/informe-fuentes";
 import { METODOLOGIA, REGLAS_METODOLOGIA } from "../src/lib/metodologia";
 import { formatoMoneda, formatoPct } from "../src/lib/numeros";
 import { estimarEmpresa, type EntradaEmpresa } from "../src/lib/empresas";
 import { estimarPersona, type EntradaPersona } from "../src/lib/personas";
 import type { Factor } from "../src/lib/tipos";
+
+const fuentes = fuentesInforme();
 
 const persona: EntradaPersona = {
   edad: 30,
@@ -96,8 +99,9 @@ describe("informe de persona", () => {
     declarados,
     cifras: [{ etiqueta: "Cuotas sobre ingreso", valor: "30,0 %", formula: "x" }],
     escenarios: escenariosPersonaInforme(esc.escenarios, esc.sensibilidad, formatoMoneda, formatoPct),
-    documentos: documentosPersona({ cedula: true }, ["cedula", "ingresos-comprobables", "respaldos-ingresos"]),
+    documentos: documentosPersona({ cedula: true }, ["cedula", "ingresos-comprobables", "respaldos-ingresos"], fuentes),
     fichas: fichasPersona(),
+    fuentes,
   });
 
   it("lleva la versión de la metodología, el estado y el aviso completo", () => {
@@ -145,7 +149,7 @@ describe("fichas técnicas", () => {
   });
 
   it("las fichas de empresa salen del dataset de indicadores y todas tienen fuente", () => {
-    const fichas = fichasEmpresa(["razon_corriente", "endeudamiento", "margen_neto", "dscr"]);
+    const fichas = fichasEmpresa(["razon_corriente", "endeudamiento", "margen_neto", "dscr"], fuentes);
     expect(fichas.length).toBeGreaterThanOrEqual(3);
     for (const f of fichas) {
       expect(f.formula).not.toBe("");
@@ -154,12 +158,12 @@ describe("fichas técnicas", () => {
   });
 
   it("el umbral de la ficha usa las unidades de la metodología", () => {
-    const f = fichasEmpresa(["endeudamiento"])[0];
+    const f = fichasEmpresa(["endeudamiento"], fuentes)[0];
     expect(f?.regla).toContain("%");
   });
 
   it("ignora ids que no existen", () => {
-    expect(fichasEmpresa(["no_existe"])).toEqual([]);
+    expect(fichasEmpresa(["no_existe"], fuentes)).toEqual([]);
   });
 });
 
@@ -196,8 +200,9 @@ describe("informe de empresa", () => {
       factores: res.factores,
       declarados,
       cifras: [],
-      documentos: documentosEmpresa(),
-      fichas: fichasEmpresa(ids),
+      documentos: documentosEmpresa(fuentes),
+      fichas: fichasEmpresa(ids, fuentes),
+      fuentes,
     });
     expect(informe.folio).toMatch(/^E-/);
     expect(informe.documentos.length).toBeGreaterThan(3);

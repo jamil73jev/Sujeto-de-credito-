@@ -1,4 +1,3 @@
-import { datos } from "./datos";
 import type {
   ResultadoEscenarioEmpresa,
   ResultadoEscenarioPersona,
@@ -236,8 +235,37 @@ function reglaDeIndicador(id: string, general: { tipo: "minimo" | "maximo" | nul
   return general.valor === null ? general.nota : `${general.tipo === "minimo" ? "Mínimo" : "Máximo"} ${general.valor.toLocaleString("es-EC")}: ${general.nota}`;
 }
 
-export function fichasEmpresa(ids: string[]): FichaIndicador[] {
-  return datos.indicadores.registros
+/** Datos del dataset que el informe necesita; los arma `fuentesInforme()` en el servidor y llegan como props. */
+export interface FuentesInforme {
+  textosNivel: Record<"favorable" | "condicionado" | "debil", { titulo: string; texto: string }>;
+  descargo: string;
+  checklistPersonas: ItemChecklistInforme[];
+  checklistEmpresas: ItemChecklistInforme[];
+  indicadores: IndicadorInforme[];
+}
+
+interface ItemChecklistInforme {
+  id: string;
+  item: string;
+  descripcion: string;
+  donde_obtenerlo: string | null;
+  fuente: string;
+}
+
+interface IndicadorInforme {
+  id: string;
+  nombre: string;
+  formula: string;
+  interpretacion: string;
+  advertencias: string[];
+  regla_general: { tipo: "minimo" | "maximo" | null; valor: number | null; nota: string };
+  fuente_nombre: string;
+  fuente_url: string | null;
+  confianza: FichaIndicador["confianza"];
+}
+
+export function fichasEmpresa(ids: string[], fuentes: FuentesInforme): FichaIndicador[] {
+  return fuentes.indicadores
     .filter((i) => ids.includes(i.id))
     .map((i) => ({
       nombre: i.nombre,
@@ -245,10 +273,8 @@ export function fichasEmpresa(ids: string[]): FichaIndicador[] {
       lectura: i.interpretacion,
       advertencias: i.advertencias,
       regla: reglaDeIndicador(i.id, i.regla_general),
-      fuente:
-        i.traza.fuente_nombre +
-        (i.traza.fuente_url ? ` — ${i.traza.fuente_url}` : ""),
-      confianza: i.traza.confianza,
+      fuente: i.fuente_nombre + (i.fuente_url ? ` — ${i.fuente_url}` : ""),
+      confianza: i.confianza,
     }));
 }
 
@@ -272,25 +298,26 @@ export function reglasAplicadas(tipo: "persona" | "empresa"): ReglaAplicada[] {
 export function documentosPersona(
   listos: Record<string, boolean>,
   idsPreguntados: string[],
+  fuentes: FuentesInforme,
 ): DocumentoInforme[] {
-  return datos.checklistPersonas.registros.map((i) => ({
+  return fuentes.checklistPersonas.map((i) => ({
     item: i.item,
     descripcion: i.descripcion,
     dondeObtenerlo: i.donde_obtenerlo,
     declaradoListo: idsPreguntados.includes(i.id)
       ? (listos[i.id] ?? false)
       : null,
-    fuente: i.traza.fuente_nombre,
+    fuente: i.fuente,
   }));
 }
 
-export function documentosEmpresa(): DocumentoInforme[] {
-  return datos.checklistEmpresas.registros.map((i) => ({
+export function documentosEmpresa(fuentes: FuentesInforme): DocumentoInforme[] {
+  return fuentes.checklistEmpresas.map((i) => ({
     item: i.item,
     descripcion: i.descripcion,
     dondeObtenerlo: i.donde_obtenerlo,
     declaradoListo: null,
-    fuente: i.traza.fuente_nombre,
+    fuente: i.fuente,
   }));
 }
 
@@ -372,10 +399,11 @@ interface EntradaInforme {
   } | null;
   documentos: DocumentoInforme[];
   fichas: FichaIndicador[];
+  fuentes: FuentesInforme;
 }
 
 export function construirInforme(e: EntradaInforme): Informe {
-  const textos = datos.textos.resultados[e.nivel];
+  const textos = e.fuentes.textosNivel[e.nivel];
   return {
     folio: folioInforme(e.tipo, e.fechaISO, e.declarados),
     fechaISO: e.fechaISO,
@@ -400,7 +428,7 @@ export function construirInforme(e: EntradaInforme): Informe {
     documentos: e.documentos,
     fichas: e.fichas,
     reglas: reglasAplicadas(e.tipo),
-    aviso: datos.textos.descargo,
+    aviso: e.fuentes.descargo,
     avisoPrivacidad:
       "Este informe contiene los datos que declaraste. Este sitio no lo guarda ni lo envía a ningún servidor: si lo imprimes o lo guardas como PDF, quedará solo en tu equipo. Compártelo únicamente con quien tú decidas.",
   };
