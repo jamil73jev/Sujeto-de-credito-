@@ -1,0 +1,89 @@
+{
+  "version": 1,
+  "registros": [
+    {
+      "id": "puntualidad",
+      "habito": "Pagar siempre a tiempo",
+      "detalle": "Según Fideval es el factor más importante; un solo atraso puede afectar el puntaje.",
+      "traza": {
+        "fuente_nombre": "Fideval: Buró de crédito en Ecuador",
+        "fuente_url": "https://www.fideval.com/blog/1/buro-de-credito-en-ecuador-por-que-importa-y-como-define-tu-futuro-financiero/",
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "recomendacion",
+        "confianza": "media",
+        "desactualizado": false
+      }
+    },
+    {
+      "id": "uso-tarjetas",
+      "habito": "Usar menos del 30 % del cupo de tus tarjetas",
+      "detalle": "El 30 % es la recomendación de Fideval, no una regla oficial.",
+      "traza": {
+        "fuente_nombre": "Fideval: Buró de crédito en Ecuador",
+        "fuente_url": "https://www.fideval.com/blog/1/buro-de-credito-en-ecuador-por-que-importa-y-como-define-tu-futuro-financiero/",
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "recomendacion",
+        "confianza": "media",
+        "desactualizado": false
+      }
+    },
+    {
+      "id": "solicitudes",
+      "habito": "Pedir créditos nuevos con moderación",
+      "detalle": "Cada consulta queda registrada; muchas solicitudes seguidas pueden pesar.",
+      "traza": {
+        "fuente_nombre": "Fideval: Buró de crédito en Ecuador",
+        "fuente_url": "https://www.fideval.com/blog/1/buro-de-credito-en-ecuador-por-que-importa-y-como-define-tu-futuro-financiero/",
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "recomendacion",
+        "confianza": "media",
+        "desactualizado": false
+      }
+    },
+    {
+      "id": "cuentas-antiguas",
+      "habito": "Mantener abiertas tus cuentas antiguas",
+      "detalle": "La antigüedad de las cuentas es uno de los factores, aunque las uses poco.",
+      "traza": {
+        "fuente_nombre": "Fideval: Buró de crédito en Ecuador",
+        "fuente_url": "https://www.fideval.com/blog/1/buro-de-credito-en-ecuador-por-que-importa-y-como-define-tu-futuro-financiero/",
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "recomendacion",
+        "confianza": "media",
+        "desactualizado": false
+      }
+    },
+    {
+      "id": "reestructurar",
+      "habito": "Refinanciar o reestructurar a tiempo",
+      "detalle": "Hacerlo antes del atraso evita un deterioro mayor.",
+      "traza": {
+        "fuente_nombre": "Fideval: Buró de crédito en Ecuador",
+        "fuente_url": "https://www.fideval.com/blog/1/buro-de-credito-en-ecuador-por-que-importa-y-como-define-tu-futuro-financiero/",
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "recomendacion",
+        "confianza": "media",
+        "desactualizado": false
+      }
+    },
+    {
+      "id": "revisar",
+      "habito": "Revisar tu historial cada cierto tiempo",
+      "detalle": "Si hay un error, repórtalo a la entidad que lo registró.",
+      "traza": {
+        "fuente_nombre": "Fideval: Buró de crédito en Ecuador",
+        "fuente_url": "https://www.fideval.com/blog/1/buro-de-credito-en-ecuador-por-que-importa-y-como-define-tu-futuro-financiero/",
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "recomendacion",
+        "confianza": "media",
+        "desactualizado": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "name": "sujeto-credito-ec",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Panel público y gratuito para que personas y empresas de Ecuador se autoevalúen como sujetos de crédito. Sin consulta de datos de terceros y sin almacenamiento de datos del usuario.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "validate:data": "tsx scripts/validate-data.ts",
+    "check": "npm run typecheck && npm run test && npm run validate:data",
+    "build:html": "node scripts/build-html.mjs",
+    "e2e": "node scripts/e2e.mjs",
+    "a11y": "node scripts/a11y.mjs",
+    "lighthouse": "node scripts/lighthouse.mjs",
+    "visual": "node scripts/visual.mjs"
+  },
+  "dependencies": {
+    "next": "^16.4.5",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.14.0",
+    "@types/node": "^26.6.6",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "axe-core": "^4.14.0",
+    "chrome-launcher": "^1.2.3",
+    "esbuild": "^0.28.2",
+    "lighthouse": "^13.6.0",
+    "pixelmatch": "^8.0.0",
+    "playwright": "^1.63.0",
+    "pngjs": "^7.0.0",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.1.0"
+  }
+}

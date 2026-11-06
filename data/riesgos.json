@@ -1,0 +1,93 @@
+{
+  "version": 2,
+  "registros": [
+    {
+      "id": "datos-de-terceros",
+      "riesgo": "Que el sitio llegue a mostrar o inferir datos crediticios de terceros sin autorización",
+      "probabilidad": "baja",
+      "impacto": "alto",
+      "mitigacion": "Diseño sin búsquedas por cédula ni RUC; solo autoevaluación y enlaces a canales oficiales. Revisión jurídica antes de agregar cualquier consulta.",
+      "tipo": "legal"
+    },
+    {
+      "id": "estimacion-erronea",
+      "riesgo": "Que un usuario tome la estimación como dictamen y tome decisiones financieras con ella",
+      "probabilidad": "media",
+      "impacto": "medio",
+      "mitigacion": "Descargo visible en cada resultado, lenguaje de orientación y nunca de aprobación; parámetros publicados en la página de metodología.",
+      "tipo": "reputacional"
+    },
+    {
+      "id": "datos-desactualizados",
+      "riesgo": "Tasas, costos o normas desactualizadas",
+      "probabilidad": "alta",
+      "impacto": "medio",
+      "mitigacion": "Cada dato lleva fecha y fuente; la página de mercado las muestra; proceso mensual de actualización y alerta cuando un dato supera 60 días.",
+      "tipo": "tecnico"
+    },
+    {
+      "id": "scraping-y-terminos-de-uso",
+      "riesgo": "Automatizar consultas al SRI, burós o superintendencias y violar sus términos de uso o evadir captchas",
+      "probabilidad": "baja",
+      "impacto": "alto",
+      "mitigacion": "Decisión de diseño: solo enlazar; no hacer scraping ni evadir captchas.",
+      "tipo": "legal"
+    },
+    {
+      "id": "analitica-con-datos-personales",
+      "riesgo": "Agregar analítica o terceros que capturen lo que el usuario escribe",
+      "probabilidad": "media",
+      "impacto": "alto",
+      "mitigacion": "CSP restrictiva, sin scripts externos; actualizar /privacidad y la política antes de añadir cualquier tercero.",
+      "tipo": "legal"
+    },
+    {
+      "id": "umbrales-propios",
+      "riesgo": "Umbrales propios (cuota/ingreso, ratios) sin respaldo oficial que sesguen el resultado",
+      "probabilidad": "media",
+      "impacto": "medio",
+      "mitigacion": "Marcados como supuesto propio, visibles y editables en un solo archivo; reemplazar por fuentes oficiales cuando existan.",
+      "tipo": "tecnico"
+    },
+    {
+      "id": "sesgo-discriminatorio",
+      "riesgo": "Reglas que discriminen por variables no justificadas",
+      "probabilidad": "baja",
+      "impacto": "alto",
+      "mitigacion": "Solo variables justificadas y explicables; no se usan atributos sensibles; revisar con pruebas de equidad antes de agregar reglas.",
+      "tipo": "legal"
+    },
+    {
+      "id": "suplantacion-por-busqueda",
+      "riesgo": "Suplantación o exposición por búsquedas por RUC o cédula",
+      "probabilidad": "baja",
+      "impacto": "alto",
+      "mitigacion": "No existen búsquedas identificables de personas; el sitio no pide cédula ni RUC.",
+      "tipo": "legal"
+    },
+    {
+      "id": "maxima-vs-referencial",
+      "riesgo": "Confundir tasa máxima o referencial con una oferta",
+      "probabilidad": "media",
+      "impacto": "medio",
+      "mitigacion": "Etiquetas explícitas y aviso junto a cada simulación: ninguna es una oferta personalizada.",
+      "tipo": "reputacional"
+    },
+    {
+      "id": "muestra-pequena",
+      "riesgo": "Benchmarks sectoriales con muy pocas empresas",
+      "probabilidad": "media",
+      "impacto": "medio",
+      "mitigacion": "Mínimo de 30 empresas válidas por celda; si no, agregar a un CIIU superior y mostrar el tamaño de la muestra.",
+      "tipo": "tecnico"
+    },
+    {
+      "id": "licencia-datos-abiertos",
+      "riesgo": "Reutilizar datos públicos sin una licencia clara",
+      "probabilidad": "media",
+      "impacto": "alto",
+      "mitigacion": "Registro de licencias por recurso en fuentes.json y confirmación escrita antes de automatizar.",
+      "tipo": "legal"
+    }
+  ]
+}

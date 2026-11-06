@@ -1,0 +1,423 @@
+{
+  "version": 2,
+  "registros": [
+    {
+      "id": "razon_corriente",
+      "nombre": "Razón corriente",
+      "formula": "Activo corriente / Pasivo corriente",
+      "cuentas_requeridas": [
+        "activo_corriente",
+        "pasivo_corriente"
+      ],
+      "interpretacion": "Mide cuántos dólares de activo de corto plazo hay por cada dólar de deuda de corto plazo.",
+      "advertencias": [
+        "Depende mucho del sector y del ciclo de cobro."
+      ],
+      "regla_general": {
+        "tipo": "minimo",
+        "valor": 1,
+        "nota": "Convención general: un valor por debajo de 1 sugiere liquidez ajustada."
+      },
+      "traza": {
+        "fuente_nombre": "Convención contable general; no es una norma ecuatoriana",
+        "fuente_url": null,
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "interpretacion",
+        "confianza": "media",
+        "desactualizado": false
+      }
+    },
+    {
+      "id": "prueba_acida",
+      "nombre": "Prueba ácida",
+      "formula": "(Activo corriente - Inventarios) / Pasivo corriente",
+      "cuentas_requeridas": [
+        "activo_corriente",
+        "inventarios",
+        "pasivo_corriente"
+      ],
+      "interpretacion": "Liquidez sin depender de vender inventarios.",
+      "advertencias": [
+        "Requiere el dato de inventarios."
+      ],
+      "regla_general": {
+        "tipo": null,
+        "valor": null,
+        "nota": "Sin regla general; comparar con el sector."
+      },
+      "traza": {
+        "fuente_nombre": "Convención contable general; no es una norma ecuatoriana",
+        "fuente_url": null,
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "interpretacion",
+        "confianza": "media",
+        "desactualizado": false
+      }
+    },
+    {
+      "id": "endeudamiento",
+      "nombre": "Endeudamiento",
+      "formula": "Pasivo total / Activo total",
+      "cuentas_requeridas": [
+        "pasivo_total",
+        "activo_total"
+      ],
+      "interpretacion": "Qué parte de los activos está financiada con deuda y otros pasivos.",
+      "advertencias": [
+        "Los límites aceptables varían por sector."
+      ],
+      "regla_general": {
+        "tipo": "maximo",
+        "valor": 70,
+        "nota": "Parámetro referencial propio, sin respaldo oficial."
+      },
+      "traza": {
+        "fuente_nombre": "Convención contable general; no es una norma ecuatoriana",
+        "fuente_url": null,
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "interpretacion",
+        "confianza": "media",
+        "desactualizado": false
+      }
+    },
+    {
+      "id": "apalancamiento",
+      "nombre": "Endeudamiento patrimonial",
+      "formula": "Pasivo total / Patrimonio",
+      "cuentas_requeridas": [
+        "pasivo_total",
+        "patrimonio"
+      ],
+      "interpretacion": "Cuántos dólares de pasivo hay por cada dólar de patrimonio.",
+      "advertencias": [
+        "No es calculable si el patrimonio es cero o negativo."
+      ],
+      "regla_general": {
+        "tipo": null,
+        "valor": null,
+        "nota": "Sin regla general; comparar con el sector."
+      },
+      "traza": {
+        "fuente_nombre": "Convención contable general; no es una norma ecuatoriana",
+        "fuente_url": null,
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "interpretacion",
+        "confianza": "media",
+        "desactualizado": false
+      }
+    },
+    {
+      "id": "margen_neto",
+      "nombre": "Margen neto",
+      "formula": "Utilidad neta / Ventas",
+      "cuentas_requeridas": [
+        "utilidad_neta",
+        "ventas_anuales"
+      ],
+      "interpretacion": "Qué parte de las ventas queda como utilidad.",
+      "advertencias": [
+        "Un año atípico distorsiona el resultado."
+      ],
+      "regla_general": {
+        "tipo": "minimo",
+        "valor": 0,
+        "nota": "Una utilidad negativa indica pérdidas."
+      },
+      "traza": {
+        "fuente_nombre": "Convención contable general; no es una norma ecuatoriana",
+        "fuente_url": null,
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "interpretacion",
+        "confianza": "media",
+        "desactualizado": false
+      }
+    },
+    {
+      "id": "roa",
+      "nombre": "Rentabilidad sobre activos (ROA)",
+      "formula": "Utilidad neta / Activo total",
+      "cuentas_requeridas": [
+        "utilidad_neta",
+        "activo_total"
+      ],
+      "interpretacion": "Cuánta utilidad genera cada dólar de activos.",
+      "advertencias": [
+        "La referencia usa saldos promedio; aquí se usa el saldo de cierre."
+      ],
+      "regla_general": {
+        "tipo": null,
+        "valor": null,
+        "nota": "Sin regla general; comparar con el sector."
+      },
+      "traza": {
+        "fuente_nombre": "Convención contable general; no es una norma ecuatoriana",
+        "fuente_url": null,
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "interpretacion",
+        "confianza": "media",
+        "desactualizado": false
+      }
+    },
+    {
+      "id": "roe",
+      "nombre": "Rentabilidad sobre patrimonio (ROE)",
+      "formula": "Utilidad neta / Patrimonio",
+      "cuentas_requeridas": [
+        "utilidad_neta",
+        "patrimonio"
+      ],
+      "interpretacion": "Cuánta utilidad genera cada dólar de patrimonio.",
+      "advertencias": [
+        "No es interpretable con patrimonio cercano a cero.",
+        "La referencia usa saldos promedio; aquí se usa el saldo de cierre."
+      ],
+      "regla_general": {
+        "tipo": null,
+        "valor": null,
+        "nota": "Sin regla general; comparar con el sector."
+      },
+      "traza": {
+        "fuente_nombre": "Convención contable general; no es una norma ecuatoriana",
+        "fuente_url": null,
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "interpretacion",
+        "confianza": "media",
+        "desactualizado": false
+      }
+    },
+    {
+      "id": "cobertura_intereses",
+      "nombre": "Cobertura de intereses",
+      "formula": "Utilidad operativa / Gastos financieros",
+      "cuentas_requeridas": [
+        "utilidad_operativa",
+        "gastos_financieros"
+      ],
+      "interpretacion": "Cuántas veces la utilidad operativa cubre los gastos financieros.",
+      "advertencias": [
+        "Requiere utilidad operativa y gastos financieros."
+      ],
+      "regla_general": {
+        "tipo": "minimo",
+        "valor": 1,
+        "nota": "Un valor menor a 1 indica que la utilidad operativa no alcanza a cubrir los intereses."
+      },
+      "traza": {
+        "fuente_nombre": "Convención contable general; no es una norma ecuatoriana",
+        "fuente_url": null,
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "interpretacion",
+        "confianza": "media",
+        "desactualizado": false
+      }
+    },
+    {
+      "id": "rotacion_activos",
+      "nombre": "Rotación de activos",
+      "formula": "Ventas / Activo total",
+      "cuentas_requeridas": [
+        "ventas_anuales",
+        "activo_total"
+      ],
+      "interpretacion": "Cuántos dólares de ventas genera cada dólar de activos.",
+      "advertencias": [
+        "La referencia usa activos promedio; aquí se usa el saldo de cierre."
+      ],
+      "regla_general": {
+        "tipo": null,
+        "valor": null,
+        "nota": "Sin regla general; comparar con el sector."
+      },
+      "traza": {
+        "fuente_nombre": "Investigación aportada, sec. 5.1 (fórmulas)",
+        "fuente_url": null,
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "interpretacion",
+        "confianza": "media",
+        "desactualizado": false
+      }
+    },
+    {
+      "id": "dias_cobranza",
+      "nombre": "Días de cobranza",
+      "formula": "Cuentas por cobrar / Ventas × 365",
+      "cuentas_requeridas": [
+        "cuentas_por_cobrar",
+        "ventas_anuales"
+      ],
+      "interpretacion": "Días que tarda en cobrarse lo vendido.",
+      "advertencias": [
+        "Se usan las ventas totales como aproximación de las ventas a crédito.",
+        "Un valor mayor no implica mejor desempeño."
+      ],
+      "regla_general": {
+        "tipo": null,
+        "valor": null,
+        "nota": "Sin regla general; comparar con el sector."
+      },
+      "traza": {
+        "fuente_nombre": "Investigación aportada, sec. 5.1 (fórmulas)",
+        "fuente_url": null,
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "interpretacion",
+        "confianza": "media",
+        "desactualizado": false
+      }
+    },
+    {
+      "id": "dscr",
+      "nombre": "Cobertura del servicio de la deuda (DSCR)",
+      "formula": "Flujo disponible para servicio de deuda / Servicio total de la deuda",
+      "cuentas_requeridas": [
+        "flujo_disponible",
+        "servicio_deuda"
+      ],
+      "interpretacion": "Capacidad de cubrir capital e intereses con el flujo de caja.",
+      "advertencias": [
+        "Exige datos de flujo y cronograma de pagos que no salen de los estados públicos.",
+        "Sin esos datos queda como No calculable; no se reemplaza por la cobertura de intereses."
+      ],
+      "regla_general": {
+        "tipo": null,
+        "valor": null,
+        "nota": "Referencia propia (no oficial), aprobada en la metodología v1.1: más de 1,2 cumple; de 1,0 a 1,2 atención; menos de 1,0 no cumple. Solo cuenta si se declaran flujo y servicio de la deuda."
+      },
+      "traza": {
+        "fuente_nombre": "Investigación aportada, sec. 5.1 (fórmulas)",
+        "fuente_url": null,
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "interpretacion",
+        "confianza": "media",
+        "desactualizado": false
+      }
+    },
+    {
+      "id": "crecimiento_ventas",
+      "nombre": "Crecimiento de ventas",
+      "formula": "(Ventas del año / Ventas del año anterior − 1) × 100",
+      "cuentas_requeridas": [
+        "ventas_anuales",
+        "ventas_anteriores"
+      ],
+      "interpretacion": "Cuánto crecieron o cayeron las ventas frente al cierre anterior.",
+      "advertencias": [
+        "Requiere el cierre del año anterior.",
+        "Solo informa; no entra en el nivel."
+      ],
+      "regla_general": {
+        "tipo": null,
+        "valor": null,
+        "nota": "Sin regla general; informa la tendencia."
+      },
+      "traza": {
+        "fuente_nombre": "Metodología v1.1 de este proyecto",
+        "fuente_url": null,
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "interpretacion",
+        "confianza": "media",
+        "desactualizado": false
+      }
+    },
+    {
+      "id": "variacion_margen",
+      "nombre": "Variación del margen neto",
+      "formula": "Margen neto del año − Margen neto del año anterior (en puntos porcentuales)",
+      "cuentas_requeridas": [
+        "utilidad_neta",
+        "ventas_anuales",
+        "utilidad_neta_anterior",
+        "ventas_anteriores"
+      ],
+      "interpretacion": "Si la rentabilidad sobre ventas mejoró o empeoró frente al cierre anterior.",
+      "advertencias": [
+        "Requiere el cierre del año anterior.",
+        "Solo informa; no entra en el nivel."
+      ],
+      "regla_general": {
+        "tipo": null,
+        "valor": null,
+        "nota": "Sin regla general; informa la tendencia."
+      },
+      "traza": {
+        "fuente_nombre": "Metodología v1.1 de este proyecto",
+        "fuente_url": null,
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "interpretacion",
+        "confianza": "media",
+        "desactualizado": false
+      }
+    },
+    {
+      "id": "roa_promedio",
+      "nombre": "ROA con activo promedio",
+      "formula": "Utilidad neta / ((Activo total + Activo total anterior) / 2)",
+      "cuentas_requeridas": [
+        "utilidad_neta",
+        "activo_total",
+        "activo_total_anterior"
+      ],
+      "interpretacion": "Cuánta utilidad genera cada dólar de activos, con el promedio de dos cierres.",
+      "advertencias": [
+        "Requiere el cierre del año anterior.",
+        "No se compara con el sector: los benchmarks usan el saldo de cierre."
+      ],
+      "regla_general": {
+        "tipo": null,
+        "valor": null,
+        "nota": "Sin regla general; informa la tendencia."
+      },
+      "traza": {
+        "fuente_nombre": "Metodología v1.1 de este proyecto",
+        "fuente_url": null,
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "interpretacion",
+        "confianza": "media",
+        "desactualizado": false
+      }
+    },
+    {
+      "id": "roe_promedio",
+      "nombre": "ROE con patrimonio promedio",
+      "formula": "Utilidad neta / ((Patrimonio + Patrimonio anterior) / 2)",
+      "cuentas_requeridas": [
+        "utilidad_neta",
+        "patrimonio",
+        "patrimonio_anterior"
+      ],
+      "interpretacion": "Cuánta utilidad genera cada dólar de patrimonio, con el promedio de dos cierres.",
+      "advertencias": [
+        "Requiere el cierre del año anterior.",
+        "No es interpretable con patrimonio promedio cercano a cero.",
+        "No se compara con el sector: los benchmarks usan el saldo de cierre."
+      ],
+      "regla_general": {
+        "tipo": null,
+        "valor": null,
+        "nota": "Sin regla general; informa la tendencia."
+      },
+      "traza": {
+        "fuente_nombre": "Metodología v1.1 de este proyecto",
+        "fuente_url": null,
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "interpretacion",
+        "confianza": "media",
+        "desactualizado": false
+      }
+    }
+  ]
+}

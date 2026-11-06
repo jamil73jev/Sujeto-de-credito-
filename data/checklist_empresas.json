@@ -1,0 +1,149 @@
+{
+  "version": 2,
+  "registros": [
+    {
+      "id": "ruc-activo",
+      "item": "RUC activo con antigüedad",
+      "descripcion": "Ejemplo: el crédito productivo de Banco Pichincha pide RUC activo desde hace tres años. Otras entidades piden menos.",
+      "donde_obtenerlo": "SRI",
+      "url": "https://www.expreso.ec/actualidad/economia/abanico-crediticio-abre-pymes-167848.html",
+      "peso_referencial": null,
+      "es_ejemplo_de_entidad": true,
+      "traza": {
+        "fuente_nombre": "Expreso: el abanico crediticio se abre para las pymes",
+        "fuente_url": "https://www.expreso.ec/actualidad/economia/abanico-crediticio-abre-pymes-167848.html",
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "hecho",
+        "confianza": "media",
+        "desactualizado": false
+      }
+    },
+    {
+      "id": "renta-o-estados-financieros",
+      "item": "Declaración de renta o estados financieros recientes",
+      "descripcion": "Ejemplo: Banco del Pacífico pide declaración de renta de los dos últimos años o estados financieros firmados del último trimestre.",
+      "donde_obtenerlo": "SRI / contador",
+      "url": "https://www.eldiario.ec/negocios/requisitos-credito-pymes-ecuador-14042025/",
+      "peso_referencial": null,
+      "es_ejemplo_de_entidad": true,
+      "traza": {
+        "fuente_nombre": "El Diario: requisitos de crédito para pymes",
+        "fuente_url": "https://www.eldiario.ec/negocios/requisitos-credito-pymes-ecuador-14042025/",
+        "fecha_publicacion": "2025-04-14",
+        "fecha_consulta": "2026-11-05",
+        "tipo": "hecho",
+        "confianza": "media",
+        "desactualizado": false
+      }
+    },
+    {
+      "id": "cumplimiento-tributario",
+      "item": "Cumplimiento tributario sin deudas en firme",
+      "descripcion": "El certificado de cumplimiento tributario indica si hay deudas en firme.",
+      "donde_obtenerlo": "SRI en línea",
+      "url": "https://www.sri.gob.ec",
+      "peso_referencial": null,
+      "es_ejemplo_de_entidad": false,
+      "traza": {
+        "fuente_nombre": "Ejemplo de certificado de cumplimiento tributario",
+        "fuente_url": "https://atenea.epn.edu.ec/bitstream/25000/1423/1/Certificado_Cumplimiento_Tributario.pdf",
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "hecho",
+        "confianza": "media",
+        "desactualizado": false
+      }
+    },
+    {
+      "id": "obligaciones-patronales",
+      "item": "Sin obligaciones patronales en mora",
+      "descripcion": "Certificado del IESS con validez de 30 días.",
+      "donde_obtenerlo": "Portal del IESS",
+      "url": "https://www.iess.gob.ec",
+      "peso_referencial": null,
+      "es_ejemplo_de_entidad": false,
+      "traza": {
+        "fuente_nombre": "Ejemplo de certificado IESS",
+        "fuente_url": "https://www.quito-turismo.gob.ec/descargas/LOTAIP%202023/RENCICION%20DE%20CUENTAS%202022/certificado_empresa_LABORAL%20Y%20TRIBUTARIO.pdf",
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "hecho",
+        "confianza": "media",
+        "desactualizado": false
+      }
+    },
+    {
+      "id": "estados-financieros-supercias",
+      "item": "Estados financieros presentados a la Superintendencia de Compañías",
+      "descripcion": "Las compañías deben presentarlos en el primer cuatrimestre de cada año.",
+      "donde_obtenerlo": "Portal de la Superintendencia de Compañías",
+      "url": "https://appscvsmovil.supercias.gob.ec",
+      "peso_referencial": null,
+      "es_ejemplo_de_entidad": false,
+      "traza": {
+        "fuente_nombre": "Primicias: estados financieros hasta el 30 de abril",
+        "fuente_url": "https://primicias.ec/economia/empresas-estados-financieros-superintendencia-companias-93001",
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "hecho",
+        "confianza": "alta",
+        "desactualizado": false
+      }
+    },
+    {
+      "id": "nombramiento-y-acta",
+      "item": "Nombramiento del representante legal y acta de junta",
+      "descripcion": "Ejemplo: BanEcuador pide copia del nombramiento y acta de junta que autorice el crédito y las garantías.",
+      "donde_obtenerlo": "Documentos societarios",
+      "url": "https://www.gob.ec/banecuador-bp/tramites/solicitud-concesion-credito-empresas-necesidad-financiamiento",
+      "peso_referencial": null,
+      "es_ejemplo_de_entidad": true,
+      "traza": {
+        "fuente_nombre": "gob.ec: solicitud de crédito para empresas en BanEcuador",
+        "fuente_url": "https://www.gob.ec/banecuador-bp/tramites/solicitud-concesion-credito-empresas-necesidad-financiamiento",
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "hecho",
+        "confianza": "alta",
+        "desactualizado": false
+      }
+    },
+    {
+      "id": "garantias",
+      "item": "Garantías disponibles",
+      "descripcion": "La garantía reduce la exposición de la entidad, pero no elimina el análisis crediticio de la empresa. Ejemplo: el programa FNG-BM de la CFN publica cobertura máxima de 65 %, garantía de hasta USD 500.000 y crédito de hasta USD 1,5 millones, con evaluación de una entidad participante.",
+      "donde_obtenerlo": "Entidad financiera participante / CFN",
+      "url": "https://www.cfn.fin.ec/servicios/fondo-nacional-de-garantias/programa-de-garantias-fng-bm/",
+      "peso_referencial": null,
+      "es_ejemplo_de_entidad": true,
+      "traza": {
+        "fuente_nombre": "CFN, Programa de Garantías FNG-BM, según investigación aportada",
+        "fuente_url": "https://www.cfn.fin.ec/servicios/fondo-nacional-de-garantias/programa-de-garantias-fng-bm/",
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "hecho",
+        "confianza": "media",
+        "desactualizado": false
+      }
+    },
+    {
+      "id": "flujo-proyectado",
+      "item": "Flujo de caja proyectado",
+      "descripcion": "Muestra la capacidad futura de atender la deuda. Es información de la empresa solicitante; no sale de datos públicos.",
+      "donde_obtenerlo": "Tu contador o área financiera",
+      "url": null,
+      "peso_referencial": null,
+      "es_ejemplo_de_entidad": false,
+      "traza": {
+        "fuente_nombre": "Investigación aportada, sec. 3.3",
+        "fuente_url": null,
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "interpretacion",
+        "confianza": "media",
+        "desactualizado": false
+      }
+    }
+  ]
+}

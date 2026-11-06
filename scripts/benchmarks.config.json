@@ -1,0 +1,29 @@
+{
+  "_nota": "Los nombres de columna son SUPUESTOS: no pude abrir los CSV de la Superintendencia de Compañías. Ajusta 'columnas' a los encabezados reales del archivo que descargues. Un nombre que no exista en el CSV hace fallar el script (no se adivina).",
+  "separador": "auto",
+  "codificacion": "utf8",
+  "escala": 1,
+  "columnas": {
+    "ciiu": "CIIU",
+    "tamano": "TAMANO",
+    "periodo": "ANIO",
+    "ventas": "VENTAS",
+    "activo_corriente": "ACTIVO_CORRIENTE",
+    "pasivo_corriente": "PASIVO_CORRIENTE",
+    "inventarios": "INVENTARIOS",
+    "activo_total": "ACTIVO_TOTAL",
+    "pasivo_total": "PASIVO_TOTAL",
+    "patrimonio": "PATRIMONIO",
+    "utilidad_neta": "UTILIDAD_NETA",
+    "utilidad_operativa": "UTILIDAD_OPERATIVA",
+    "gastos_financieros": "GASTOS_FINANCIEROS",
+    "cuentas_por_cobrar": "CUENTAS_POR_COBRAR"
+  },
+  "tamanos": {
+    "MICROEMPRESA": "micro",
+    "PEQUEÑA": "pequena",
+    "PEQUENA": "pequena",
+    "MEDIANA": "mediana",
+    "GRANDE": "grande"
+  }
+}

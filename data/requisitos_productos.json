@@ -1,0 +1,124 @@
+{
+  "version": 1,
+  "registros": [
+    {
+      "id": "guayaquil-tarjeta",
+      "entidad": "Banco Guayaquil",
+      "producto": "Tarjeta de crédito",
+      "requisito_publicado": "La ayuda institucional publica un puntaje mínimo de 750, ingresos desde USD 700 y condiciones de antigüedad laboral o de RUC según la ocupación.",
+      "no_inferir": "No es un puntaje de corte para todos sus préstamos.",
+      "url": "https://ayuda.bancoguayaquil.com/hc/es/articles/360023670491--C%C3%B3mo-solicito-una-Tarjeta-de-Cr%C3%A9dito",
+      "traza": {
+        "fuente_nombre": "Sitio de la entidad, según investigación aportada (sin fecha de publicación uniforme)",
+        "fuente_url": "https://ayuda.bancoguayaquil.com/hc/es/articles/360023670491--C%C3%B3mo-solicito-una-Tarjeta-de-Cr%C3%A9dito",
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "hecho",
+        "confianza": "media",
+        "desactualizado": false
+      }
+    },
+    {
+      "id": "pichincha-multiproposito",
+      "entidad": "Banco Pichincha",
+      "producto": "Préstamo multipropósito",
+      "requisito_publicado": "Préstamos entre USD 500 y USD 60.000, hasta 60 meses, con evaluación y posibles ofertas preaprobadas.",
+      "no_inferir": "Los rangos comerciales no equivalen a una aprobación garantizada.",
+      "url": "https://www.pichincha.com/detalle-producto/personas-prestamo-multiproposito",
+      "traza": {
+        "fuente_nombre": "Sitio de la entidad, según investigación aportada (sin fecha de publicación uniforme)",
+        "fuente_url": "https://www.pichincha.com/detalle-producto/personas-prestamo-multiproposito",
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "hecho",
+        "confianza": "media",
+        "desactualizado": false
+      }
+    },
+    {
+      "id": "produbanco-linea",
+      "entidad": "Produbanco",
+      "producto": "Crédito en línea",
+      "requisito_publicado": "Solicita respaldos de ingresos, movimientos, documentos laborales o tributarios según la actividad.",
+      "no_inferir": "El desembolso digital no implica elegibilidad universal.",
+      "url": "https://www.produbanco.com.ec/banca-personas/creditos/credito-en-linea/",
+      "traza": {
+        "fuente_nombre": "Sitio de la entidad, según investigación aportada (sin fecha de publicación uniforme)",
+        "fuente_url": "https://www.produbanco.com.ec/banca-personas/creditos/credito-en-linea/",
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "hecho",
+        "confianza": "media",
+        "desactualizado": false
+      }
+    },
+    {
+      "id": "internacional-consumo",
+      "entidad": "Banco Internacional",
+      "producto": "Crédito de consumo",
+      "requisito_publicado": "Límites y plazos diferenciados por garantías; menciona evaluación de solicitudes en hasta 7 días hábiles.",
+      "no_inferir": "El plazo publicado no garantiza la aceptación.",
+      "url": "https://www.bancointernacional.com.ec/producto/credito-consumo/",
+      "traza": {
+        "fuente_nombre": "Sitio de la entidad, según investigación aportada (sin fecha de publicación uniforme)",
+        "fuente_url": "https://www.bancointernacional.com.ec/producto/credito-consumo/",
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "hecho",
+        "confianza": "media",
+        "desactualizado": false
+      }
+    },
+    {
+      "id": "banecuador-micro-preferencial",
+      "entidad": "BanEcuador",
+      "producto": "Microcrédito preferencial",
+      "requisito_publicado": "Para ese producto se publican 2 años de actividad, score desde 850 y un endeudamiento patrimonial máximo de 65 %.",
+      "no_inferir": "El 65 % no es cuota sobre ingreso ni un límite universal.",
+      "url": "https://www.banecuador.fin.ec/creditopersonas/creditomicroempresa/micropreferencial/",
+      "traza": {
+        "fuente_nombre": "Sitio de la entidad, según investigación aportada (sin fecha de publicación uniforme)",
+        "fuente_url": "https://www.banecuador.fin.ec/creditopersonas/creditomicroempresa/micropreferencial/",
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "hecho",
+        "confianza": "media",
+        "desactualizado": false
+      }
+    },
+    {
+      "id": "cooprogreso-digital",
+      "entidad": "Cooprogreso",
+      "producto": "Productos de consumo y digitales",
+      "requisito_publicado": "Oferta de crédito en línea con distintos montos y plazos; el proceso está sujeto a evaluación.",
+      "no_inferir": "La rapidez comercial depende de cumplir condiciones específicas.",
+      "url": "https://www.cooprogreso.fin.ec/canales/onboarding",
+      "traza": {
+        "fuente_nombre": "Sitio de la entidad, según investigación aportada (sin fecha de publicación uniforme)",
+        "fuente_url": "https://www.cooprogreso.fin.ec/canales/onboarding",
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "hecho",
+        "confianza": "media",
+        "desactualizado": false
+      }
+    },
+    {
+      "id": "peigo-tarjeta",
+      "entidad": "peiGo",
+      "producto": "Tarjeta respaldada",
+      "requisito_publicado": "Producto con garantía de fondos del cliente y condiciones particulares de cupo.",
+      "no_inferir": "No es comparable con crédito de consumo sin garantía.",
+      "url": "https://www.peigo.com.ec/preguntas-frecuentes/tarjeta-de-credito-peigo",
+      "traza": {
+        "fuente_nombre": "Sitio de la entidad, según investigación aportada (sin fecha de publicación uniforme)",
+        "fuente_url": "https://www.peigo.com.ec/preguntas-frecuentes/tarjeta-de-credito-peigo",
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "hecho",
+        "confianza": "media",
+        "desactualizado": false
+      }
+    }
+  ]
+}

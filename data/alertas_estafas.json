@@ -1,0 +1,98 @@
+{
+  "version": 2,
+  "registros": [
+    {
+      "id": "limpiar-historial",
+      "titulo": "Ofertas de \"limpiar\" o borrar tu historial",
+      "descripcion": "Nadie puede borrar ni mejorar tu historial por ti. La información solo se corrige si la entidad que reportó cometió un error, y la rectificación la hace esa entidad.",
+      "como_reconocerla": [
+        "Piden dinero por adelantado para borrar deudas del buró",
+        "Prometen subir tu score en pocos días"
+      ],
+      "que_hacer": [
+        "No pagues ni entregues datos",
+        "Si hay un error, reclama a la entidad donde tienes la operación",
+        "Consulta tu reporte solo en canales oficiales"
+      ],
+      "traza": {
+        "fuente_nombre": "Primicias: alertan sobre estafas para mejorar el historial",
+        "fuente_url": "https://primicias.ec/noticias/economia/estafa-historial-crediticio-equifax-ecuador-redes-sociales",
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "hecho",
+        "confianza": "alta",
+        "desactualizado": false
+      }
+    },
+    {
+      "id": "venta-de-reportes",
+      "titulo": "Venta de reportes de score en redes sociales",
+      "descripcion": "Circulan anuncios de supuestos expertos que venden reportes de score. Los burós autorizados y la Superintendencia de Bancos entregan el reporte al titular por sus propios canales.",
+      "como_reconocerla": [
+        "Anuncios en redes sociales o sitios web desconocidos",
+        "Piden tu cédula por mensajería a cambio de un reporte"
+      ],
+      "que_hacer": [
+        "Usa solo los canales oficiales",
+        "No compartas tu cédula con terceros desconocidos"
+      ],
+      "traza": {
+        "fuente_nombre": "Primicias: cómo obtener su score sin caer en estafas",
+        "fuente_url": "https://primicias.ec/noticias/economia/credito-score-buro-precios-reporte",
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "hecho",
+        "confianza": "media",
+        "desactualizado": true
+      }
+    },
+    {
+      "id": "entidades-no-autorizadas",
+      "titulo": "Prestamistas y entidades no autorizadas",
+      "descripcion": "En octubre de 2026 la SEPS difundió una alerta sobre 134 entidades no autorizadas. La cifra corresponde a esa alerta, no es un censo permanente de prestamistas informales.",
+      "como_reconocerla": [
+        "Ofrecen crédito inmediato sin evaluar tu situación",
+        "Piden depósitos o pagos previos para liberar el préstamo",
+        "No aparecen en los catastros oficiales de la Superintendencia de Bancos o de la SEPS"
+      ],
+      "que_hacer": [
+        "Verifica que la entidad esté registrada antes de entregar datos",
+        "Revisa la segmentación y el listado oficial de la SEPS",
+        "No pagues a gestores de 'limpieza' o de aprobación"
+      ],
+      "traza": {
+        "fuente_nombre": "Vistazo, nota sobre la alerta de la SEPS (la SEPS emitió la alerta; su comunicado oficial no se pudo abrir)",
+        "fuente_url": "https://www.vistazo.com/negocios/economia/2026-10-22-ecuador-alertan-134-entidades-no-autorizadas-captar-dinero-credito-GK11287320",
+        "fecha_publicacion": "2026-10-22",
+        "fecha_consulta": "2026-11-05",
+        "tipo": "hecho",
+        "confianza": "media",
+        "desactualizado": false
+      }
+    },
+    {
+      "id": "credito-informal",
+      "titulo": "Crédito informal (chulco)",
+      "descripcion": "Un historial formal razonable no refleja los préstamos informales de costo elevado. Para saber si puedes asumir una nueva cuota, declara también las cuotas que pagas fuera de bancos y cooperativas.",
+      "como_reconocerla": [
+        "Intereses muy superiores a las tasas máximas del segmento",
+        "Cobros diarios o semanales sin contrato claro",
+        "Garantías o amenazas ajenas a un contrato de crédito"
+      ],
+      "que_hacer": [
+        "Incluye estas cuotas en la calculadora para ver tu carga real",
+        "Compara con las tasas máximas legales por segmento",
+        "Busca refinanciar con una entidad regulada"
+      ],
+      "traza": {
+        "fuente_nombre": "Investigación aportada, sec. 6.3",
+        "fuente_url": null,
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "interpretacion",
+        "confianza": "media",
+        "desactualizado": false
+      }
+    }
+  ]
+}

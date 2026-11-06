@@ -1,0 +1,138 @@
+{
+  "version": 2,
+  "registros": [
+    {
+      "id": "comf-art-357",
+      "nombre": "Código Orgánico Monetario y Financiero, art. 357 (referencias crediticias)",
+      "numero": "art. 357",
+      "fecha_expedicion": null,
+      "estado_vigencia": "vigente",
+      "que_regula": "El servicio de referencias crediticias lo prestan la Superintendencia de Bancos y las personas jurídicas que ella autorice, para analizar riesgo, endeudamiento, solvencia y capacidad de pago. El Registro de Datos Crediticios se entrega al titular y a quien él autorice.",
+      "implicacion_para_el_sitio": "El sitio no muestra ni busca datos crediticios de terceros. Un diagnóstico con datos que escribe el propio interesado no equivale a ese servicio; compilar historiales identificables de varias fuentes sí podría acercarse a él. Requiere revisión jurídica antes de cualquier cambio.",
+      "url": "https://www.gob.ec/sb/tramites/atencion-registro-datos-crediticios-rdc",
+      "traza": {
+        "fuente_nombre": "Ficha oficial del trámite RDC en gob.ec",
+        "fuente_url": "https://www.gob.ec/sb/tramites/atencion-registro-datos-crediticios-rdc",
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "hecho",
+        "confianza": "alta",
+        "desactualizado": false
+      }
+    },
+    {
+      "id": "comf-art-358",
+      "nombre": "Código Orgánico Monetario y Financiero, art. 358",
+      "numero": "art. 358",
+      "fecha_expedicion": null,
+      "estado_vigencia": "vigente (reforma legal del 13 de octubre de 2025 como antecedente de la resolución de 2026)",
+      "que_regula": "La transmisión de información desde las fuentes del sistema financiero y las condiciones temporales de registros y reportes.",
+      "implicacion_para_el_sitio": "Marco de la resolución JPRFM-2026-033-F.",
+      "url": "https://asobanca.org.ec/wp-content/uploads/2026/08/JPRFM-2026-033-F.pdf",
+      "traza": {
+        "fuente_nombre": "Investigación aportada, sec. 1.1 (considerandos de la resolución)",
+        "fuente_url": "https://asobanca.org.ec/wp-content/uploads/2026/08/JPRFM-2026-033-F.pdf",
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "hecho",
+        "confianza": "media",
+        "desactualizado": false
+      }
+    },
+    {
+      "id": "jprfm-2026-033-f",
+      "nombre": "Resolución JPRFM-2026-033-F (reforma al Capítulo LV: Registro de Datos Crediticios y burós)",
+      "numero": "JPRFM-2026-033-F (Registro Oficial N.º 362)",
+      "fecha_expedicion": "2026-08-20",
+      "estado_vigencia": "vigente desde su expedición; implementación escalonada",
+      "que_regula": "Los reportes incluyen solo operaciones vigentes, vencidas o canceladas de los dos últimos años; la información no puede tener más de cuatro años desde que la operación se extingue legalmente y se conserva cuatro años (antes seis). Fuentes obligatorias: financieras, mercado de valores, comercial, seguros y telecomunicaciones. Fuentes complementarias: pagos de servicios básicos o tributos de naturaleza crediticia. Nuevas fuentes solo por resolución motivada, sin datos sensibles ni reservados. Implementación: SEPS 12 meses (20-08-2027 aprox.); Superintendencia de Bancos y de Compañías 18 meses (20-02-2028 aprox.).",
+      "implicacion_para_el_sitio": "Ampliar fuentes no abre el acceso público a esos datos ni levanta reservas legales. Los textos sobre cuánto tiempo aparece una deuda deben decir que hay transición. Las fechas de calendario son un cálculo referencial.",
+      "url": "https://asobanca.org.ec/wp-content/uploads/2026/08/JPRFM-2026-033-F.pdf",
+      "traza": {
+        "fuente_nombre": "Texto de la resolución (copia en Asobanca) y Primicias",
+        "fuente_url": "https://asobanca.org.ec/wp-content/uploads/2026/08/JPRFM-2026-033-F.pdf",
+        "fecha_publicacion": "2026-08-20",
+        "fecha_consulta": "2026-11-05",
+        "tipo": "hecho",
+        "confianza": "alta",
+        "desactualizado": false
+      }
+    },
+    {
+      "id": "lopdp",
+      "nombre": "Ley Orgánica de Protección de Datos Personales",
+      "numero": "Registro Oficial Suplemento 459",
+      "fecha_expedicion": "2021-05-26",
+      "estado_vigencia": "vigente",
+      "que_regula": "Tratamiento de datos personales: consentimiento libre, específico, informado e inequívoco; finalidad y minimización; derechos de acceso, rectificación, eliminación y oposición; seguridad.",
+      "implicacion_para_el_sitio": "El sitio procesa datos solo en el navegador y no los almacena. Cualquier almacenamiento, analítica o formulario de contacto exige base legal, aviso y canal para ejercer derechos.",
+      "url": "https://usgn.espe.edu.ec/wp-content/uploads/2025/06/LEY-ORGANICA-DE-PROTECCION-DE-DATOS-PERSONALES.pdf",
+      "traza": {
+        "fuente_nombre": "Texto de la LOPDP (repositorio académico)",
+        "fuente_url": "https://usgn.espe.edu.ec/wp-content/uploads/2025/06/LEY-ORGANICA-DE-PROTECCION-DE-DATOS-PERSONALES.pdf",
+        "fecha_publicacion": "2021-05-26",
+        "fecha_consulta": "2026-11-05",
+        "tipo": "hecho",
+        "confianza": "media",
+        "desactualizado": false
+      }
+    },
+    {
+      "id": "lopdp-reglamento",
+      "nombre": "Reglamento General a la LOPDP (Decreto 904)",
+      "numero": "Decreto 904",
+      "fecha_expedicion": "2023-11-13",
+      "estado_vigencia": "vigente",
+      "que_regula": "Desarrolla la LOPDP, incluida la forma de recoger el consentimiento.",
+      "implicacion_para_el_sitio": "Aplica si en el futuro se recogen datos.",
+      "url": "https://www.dspace.espol.edu.ec/bitstream/123456789/58917/3/REGLAMENTO%20DE%20LA%20LEY%20ORG%C3%81NICA%20DE%20PROTECCI%C3%93N%20DE%20DATOS%20PERSONALES.pdf",
+      "traza": {
+        "fuente_nombre": "Texto del reglamento (repositorio académico)",
+        "fuente_url": "https://www.dspace.espol.edu.ec/bitstream/123456789/58917/3/REGLAMENTO%20DE%20LA%20LEY%20ORG%C3%81NICA%20DE%20PROTECCI%C3%93N%20DE%20DATOS%20PERSONALES.pdf",
+        "fecha_publicacion": "2023-11-13",
+        "fecha_consulta": "2026-11-05",
+        "tipo": "hecho",
+        "confianza": "media",
+        "desactualizado": false
+      }
+    },
+    {
+      "id": "spdp-derechos",
+      "nombre": "Superintendencia de Protección de Datos Personales: derechos de los titulares",
+      "numero": null,
+      "fecha_expedicion": null,
+      "estado_vigencia": "vigente",
+      "que_regula": "Guía oficial de los derechos del titular y del consentimiento.",
+      "implicacion_para_el_sitio": "Debe existir un canal para ejercer derechos aunque el sitio no conserve datos.",
+      "url": "https://www.spdp.gob.ec/docs/proteccion-de-datos-personales/cuales-son-mis-derechos/",
+      "traza": {
+        "fuente_nombre": "Investigación aportada, sec. 1.3",
+        "fuente_url": "https://www.spdp.gob.ec/docs/proteccion-de-datos-personales/cuales-son-mis-derechos/",
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "hecho",
+        "confianza": "media",
+        "desactualizado": false
+      }
+    },
+    {
+      "id": "calificacion-cartera",
+      "nombre": "Calificación de cartera y provisiones (A1 a E)",
+      "numero": null,
+      "fecha_expedicion": null,
+      "estado_vigencia": "no hay matriz consolidada verificada a noviembre de 2026",
+      "que_regula": "La calificación prudencial de cartera la hace cada entidad financiera según su segmento. No es el score de un buró ni el diagnóstico de este sitio.",
+      "implicacion_para_el_sitio": "Solo explicación educativa y estadísticas agregadas. No extrapolar matrices de consumo a productivo, microcrédito o cooperativas.",
+      "url": "https://www.seps.gob.ec/calificacion-de-riesgo/",
+      "traza": {
+        "fuente_nombre": "Investigación aportada, sec. 1.4",
+        "fuente_url": "https://www.seps.gob.ec/calificacion-de-riesgo/",
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "hecho",
+        "confianza": "media",
+        "desactualizado": true
+      }
+    }
+  ]
+}

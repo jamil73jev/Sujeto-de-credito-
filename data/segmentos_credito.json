@@ -1,0 +1,226 @@
+{
+  "version": 2,
+  "registros": [
+    {
+      "id": "productivo-corporativo",
+      "segmento": "Productivo corporativo",
+      "descripcion": "Grandes empresas.",
+      "tasa_referencial_pct": 6.88,
+      "tasa_maxima_pct": 7.74,
+      "periodo": "2026-11",
+      "traza": {
+        "fuente_nombre": "BCE, tasas máximas y referenciales de noviembre de 2026 (según investigación aportada)",
+        "fuente_url": "https://contenido.bce.fin.ec/documentos/Estadisticas/SectorMonFin/TasasInteres/Indice.htm",
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "hecho",
+        "confianza": "media",
+        "desactualizado": false
+      }
+    },
+    {
+      "id": "productivo-empresarial",
+      "segmento": "Productivo empresarial",
+      "descripcion": "Empresas medianas-grandes.",
+      "tasa_referencial_pct": 8.78,
+      "tasa_maxima_pct": 10.19,
+      "periodo": "2026-11",
+      "traza": {
+        "fuente_nombre": "BCE, tasas máximas y referenciales de noviembre de 2026 (según investigación aportada)",
+        "fuente_url": "https://contenido.bce.fin.ec/documentos/Estadisticas/SectorMonFin/TasasInteres/Indice.htm",
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "hecho",
+        "confianza": "media",
+        "desactualizado": false
+      }
+    },
+    {
+      "id": "productivo-pymes",
+      "segmento": "Productivo PYMES",
+      "descripcion": "Pequeñas y medianas empresas.",
+      "tasa_referencial_pct": 8.56,
+      "tasa_maxima_pct": 9.87,
+      "periodo": "2026-11",
+      "traza": {
+        "fuente_nombre": "BCE, tasas máximas y referenciales de noviembre de 2026 (según investigación aportada)",
+        "fuente_url": "https://contenido.bce.fin.ec/documentos/Estadisticas/SectorMonFin/TasasInteres/Indice.htm",
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "hecho",
+        "confianza": "media",
+        "desactualizado": false
+      }
+    },
+    {
+      "id": "consumo",
+      "segmento": "Consumo",
+      "descripcion": "Personas, para consumo.",
+      "tasa_referencial_pct": 15.69,
+      "tasa_maxima_pct": 16.77,
+      "periodo": "2026-11",
+      "traza": {
+        "fuente_nombre": "BCE, tasas máximas y referenciales de noviembre de 2026 (según investigación aportada)",
+        "fuente_url": "https://contenido.bce.fin.ec/documentos/Estadisticas/SectorMonFin/TasasInteres/Indice.htm",
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "hecho",
+        "confianza": "media",
+        "desactualizado": false
+      }
+    },
+    {
+      "id": "microcredito-minorista",
+      "segmento": "Microcrédito minorista",
+      "descripcion": "Microempresas y trabajadores independientes.",
+      "tasa_referencial_pct": 19.47,
+      "tasa_maxima_pct": 28.23,
+      "periodo": "2026-11",
+      "traza": {
+        "fuente_nombre": "BCE, tasas máximas y referenciales de noviembre de 2026 (según investigación aportada)",
+        "fuente_url": "https://contenido.bce.fin.ec/documentos/Estadisticas/SectorMonFin/TasasInteres/Indice.htm",
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "hecho",
+        "confianza": "media",
+        "desactualizado": false
+      }
+    },
+    {
+      "id": "microcredito-acumulacion-simple",
+      "segmento": "Microcrédito acumulación simple",
+      "descripcion": "Microempresas en acumulación simple.",
+      "tasa_referencial_pct": 20.51,
+      "tasa_maxima_pct": 24.89,
+      "periodo": "2026-11",
+      "traza": {
+        "fuente_nombre": "BCE, tasas máximas y referenciales de noviembre de 2026 (según investigación aportada)",
+        "fuente_url": "https://contenido.bce.fin.ec/documentos/Estadisticas/SectorMonFin/TasasInteres/Indice.htm",
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "hecho",
+        "confianza": "media",
+        "desactualizado": false
+      }
+    },
+    {
+      "id": "microcredito-acumulacion-ampliada",
+      "segmento": "Microcrédito acumulación ampliada",
+      "descripcion": "Microempresas en acumulación ampliada.",
+      "tasa_referencial_pct": 18.42,
+      "tasa_maxima_pct": 22.05,
+      "periodo": "2026-11",
+      "traza": {
+        "fuente_nombre": "BCE, tasas máximas y referenciales de noviembre de 2026 (según investigación aportada)",
+        "fuente_url": "https://contenido.bce.fin.ec/documentos/Estadisticas/SectorMonFin/TasasInteres/Indice.htm",
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "hecho",
+        "confianza": "media",
+        "desactualizado": false
+      }
+    },
+    {
+      "id": "inmobiliario",
+      "segmento": "Inmobiliario",
+      "descripcion": "Vivienda y bienes inmuebles.",
+      "tasa_referencial_pct": 8.34,
+      "tasa_maxima_pct": 9.1,
+      "periodo": "2026-11",
+      "traza": {
+        "fuente_nombre": "BCE, tasas máximas y referenciales de noviembre de 2026 (según investigación aportada)",
+        "fuente_url": "https://contenido.bce.fin.ec/documentos/Estadisticas/SectorMonFin/TasasInteres/Indice.htm",
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "hecho",
+        "confianza": "media",
+        "desactualizado": false
+      }
+    },
+    {
+      "id": "vivienda-interes-social",
+      "segmento": "Vivienda de interés social",
+      "descripcion": "Vivienda de interés social.",
+      "tasa_referencial_pct": 4.99,
+      "tasa_maxima_pct": 4.99,
+      "periodo": "2026-11",
+      "traza": {
+        "fuente_nombre": "BCE, tasas máximas y referenciales de noviembre de 2026 (según investigación aportada)",
+        "fuente_url": "https://contenido.bce.fin.ec/documentos/Estadisticas/SectorMonFin/TasasInteres/Indice.htm",
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "hecho",
+        "confianza": "media",
+        "desactualizado": false
+      }
+    },
+    {
+      "id": "vivienda-interes-publico",
+      "segmento": "Vivienda de interés público",
+      "descripcion": "Vivienda de interés público.",
+      "tasa_referencial_pct": 4.99,
+      "tasa_maxima_pct": 4.99,
+      "periodo": "2026-11",
+      "traza": {
+        "fuente_nombre": "BCE, tasas máximas y referenciales de noviembre de 2026 (según investigación aportada)",
+        "fuente_url": "https://contenido.bce.fin.ec/documentos/Estadisticas/SectorMonFin/TasasInteres/Indice.htm",
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "hecho",
+        "confianza": "media",
+        "desactualizado": false
+      }
+    },
+    {
+      "id": "educativo",
+      "segmento": "Educativo",
+      "descripcion": "Crédito para educación.",
+      "tasa_referencial_pct": 9.15,
+      "tasa_maxima_pct": 9.5,
+      "periodo": "2026-11",
+      "traza": {
+        "fuente_nombre": "BCE, tasas máximas y referenciales de noviembre de 2026 (según investigación aportada)",
+        "fuente_url": "https://contenido.bce.fin.ec/documentos/Estadisticas/SectorMonFin/TasasInteres/Indice.htm",
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "hecho",
+        "confianza": "media",
+        "desactualizado": false
+      }
+    },
+    {
+      "id": "educativo-social",
+      "segmento": "Educativo social",
+      "descripcion": "Crédito educativo de carácter social.",
+      "tasa_referencial_pct": 5.49,
+      "tasa_maxima_pct": 7.5,
+      "periodo": "2026-11",
+      "traza": {
+        "fuente_nombre": "BCE, tasas máximas y referenciales de noviembre de 2026 (según investigación aportada)",
+        "fuente_url": "https://contenido.bce.fin.ec/documentos/Estadisticas/SectorMonFin/TasasInteres/Indice.htm",
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "hecho",
+        "confianza": "media",
+        "desactualizado": false
+      }
+    },
+    {
+      "id": "inversion-publica",
+      "segmento": "Inversión pública",
+      "descripcion": "Inversión del sector público.",
+      "tasa_referencial_pct": 8.2,
+      "tasa_maxima_pct": 9.33,
+      "periodo": "2026-11",
+      "traza": {
+        "fuente_nombre": "BCE, tasas máximas y referenciales de noviembre de 2026 (según investigación aportada)",
+        "fuente_url": "https://contenido.bce.fin.ec/documentos/Estadisticas/SectorMonFin/TasasInteres/Indice.htm",
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "hecho",
+        "confianza": "media",
+        "desactualizado": false
+      }
+    }
+  ]
+}
