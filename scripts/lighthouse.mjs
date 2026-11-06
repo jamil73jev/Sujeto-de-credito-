@@ -13,6 +13,8 @@ import { readFileSync } from "node:fs";
 import { resolve } from "node:path";
 
 const UMBRAL = 95;
+// La puntuación de rendimiento varía entre corridas (CPU del equipo o del runner); se usa la mediana de varias mediciones.
+const CORRIDAS = Math.max(1, Number(process.env.LIGHTHOUSE_RUNS ?? 3));
 const RUTAS = ["/", "/personas", "/empresas", "/metodologia"];
 const BASE = process.env.LIGHTHOUSE_BASE;
 let servidor = null;
@@ -38,7 +40,10 @@ for (const modo of ["mobile", "desktop"]) {
   for (const ruta of RUTAS) {
     const opciones = { port: chrome.port, output: "json", logLevel: "error", onlyCategories: ["performance", "accessibility", "best-practices", "seo"] };
     const config = modo === "desktop" ? { extends: "lighthouse:default", settings: { formFactor: "desktop", screenEmulation: { mobile: false, width: 1350, height: 940, deviceScaleFactor: 1, disabled: false }, throttling: { rttMs: 40, throughputKbps: 10240, cpuSlowdownMultiplier: 1 } } } : undefined;
-    const r = await lighthouse(urlDe(ruta), opciones, config);
+    const mediciones = [];
+    for (let i = 0; i < CORRIDAS; i += 1) mediciones.push(await lighthouse(urlDe(ruta), opciones, config));
+    mediciones.sort((a, b) => (a.lhr.categories.performance?.score ?? 0) - (b.lhr.categories.performance?.score ?? 0));
+    const r = mediciones[Math.floor(mediciones.length / 2)];
     const c = r.lhr.categories;
     const puntaje = (k) => Math.round((c[k]?.score ?? 0) * 100);
     const fila = { rendimiento: puntaje("performance"), accesibilidad: puntaje("accessibility"), buenasPracticas: puntaje("best-practices"), seo: puntaje("seo") };
