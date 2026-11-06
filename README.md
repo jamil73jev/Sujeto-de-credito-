@@ -8,6 +8,10 @@ Sitio público y gratuito para que personas y empresas de Ecuador se **autoeval�
 - [`diseno/esqueleto/`](diseno/esqueleto/): fuentes del esqueleto de diseño pantalla por pantalla.
 - [`prototipos/`](prototipos/): versiones HTML de un solo archivo para revisar sin instalar nada.
 
+## Aviso de uso
+
+Proyecto personal sin licencia de código abierto: ver [`AVISO.md`](AVISO.md). Qué no subir y cómo reportar problemas: [`SEGURIDAD.md`](SEGURIDAD.md). Historial de cambios: [`CHANGELOG.md`](CHANGELOG.md).
+
 ## Principios de diseño
 
 - **Sin datos de terceros.** El Registro de Datos Crediticios (COMF art. 357) solo se entrega al titular o a quien él autorice. El sitio no consulta burós, SRI ni superintendencias: enlaza a sus canales oficiales.
