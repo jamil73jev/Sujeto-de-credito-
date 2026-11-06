@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Mapa del producto</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<style>
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,'SF Pro Display','SF Pro Text','Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;color:#0a1633;background-color:#fff;background-image:radial-gradient(50% 380px at 12% 0%,rgba(37,99,235,.10),transparent 70%),radial-gradient(45% 380px at 92% 0%,rgba(182,242,58,.24),transparent 70%);background-repeat:no-repeat;font-variant-numeric:tabular-nums;-webkit-font-smoothing:antialiased}
+*{box-sizing:border-box}
+p{margin:0}
+h1,h2,h3{margin:0;font-weight:600}
+.cont{max-width:1160px;margin:0 auto;padding:0 28px}
+.gris{color:#55607a}
+.card{background:#f2f6ff;border-radius:28px;padding:32px;display:flex;flex-direction:column;gap:6px}
+.pill{display:inline-block;font-size:12px;font-weight:600;border-radius:999px;padding:3px 10px;white-space:nowrap}
+.hoy{background:#e6ecf8;color:#34405c}
+.nuevo{background:#e4edff;color:#1e40af}
+.ruta{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:13px;color:#55607a}
+.fila{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;padding:12px 0;border-top:1px solid #e0e7f5;font-size:16px;line-height:1.4}
+.fila:first-of-type{border-top:0}
+</style>
+</helmet>
+<div class="cont" style="padding-top:72px;padding-bottom:80px;display:flex;flex-direction:column;gap:72px">
+
+<header style="display:flex;flex-direction:column;gap:18px">
+<span class="gris" style="font-size:17px;font-weight:600;color:#1d4ed8">¿Soy sujeto de crédito? Ecuador</span>
+<h1 style="font-size:clamp(44px,7vw,80px);line-height:1.04;letter-spacing:-0.045em">Esqueleto <span style="background:linear-gradient(180deg,transparent 62%,#b6f23a 62%,#b6f23a 92%,transparent 92%);padding:0 .05em">del producto</span></h1>
+<p class="gris" style="font-size:24px;line-height:1.4;letter-spacing:-0.01em;max-width:780px">Lo que construiremos, pantalla por pantalla, y en qué fase del plan llega cada pieza. Los textos y valores entre corchetes son marcadores, no datos.</p>
+<div style="display:flex;gap:20px;flex-wrap:wrap;align-items:center;font-size:15px"><span><span class="pill hoy">Existe hoy</span> ya está en el proyecto</span><span><span class="pill nuevo">Nuevo · Fase 2</span> se construye o se rehace en esa fase</span></div>
+</header>
+
+<section style="display:flex;flex-direction:column;gap:28px">
+<div style="display:flex;flex-direction:column;gap:10px"><h2 style="font-size:clamp(32px,4.5vw,48px);line-height:1.08;letter-spacing:-0.04em">Mapa del sitio</h2><p class="gris" style="font-size:19px;line-height:1.45;max-width:700px">Seis pantallas y un documento. Todo se calcula en el navegador: no hay cuentas, servidor ni analítica.</p></div>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(360px,1fr));gap:16px">
+
+<div class="card">
+<div style="display:flex;justify-content:space-between;gap:8px;align-items:baseline"><h3 style="font-size:26px;letter-spacing:-0.03em">Portada</h3><span class="ruta">/</span></div>
+<p class="gris" style="font-size:16px;line-height:1.45;margin-bottom:8px">Dice en una línea qué es y lleva a Personas o a Empresas.</p>
+<div class="fila"><span>Titular y simulador de los tres niveles</span><span class="pill nuevo">Nuevo · Fase 0</span></div>
+<div class="fila"><span>Dos entradas: Soy persona, Tengo una empresa</span><span class="pill hoy">Existe hoy</span></div>
+<div class="fila"><span>Qué miramos, dimensión por dimensión</span><span class="pill nuevo">Nuevo · Fase 0</span></div>
+<div class="fila"><span>Tres tarjetas de confianza: privacidad, cálculo y fuentes</span><span class="pill nuevo">Nuevo · Fase 0</span></div>
+<div class="fila"><span>Aviso contra quien ofrece limpiar el historial</span><span class="pill hoy">Existe hoy</span></div>
+<div class="fila"><span>Preguntas frecuentes</span><span class="pill hoy">Existe hoy</span></div>
+</div>
+
+<div class="card">
+<div style="display:flex;justify-content:space-between;gap:8px;align-items:baseline"><h3 style="font-size:26px;letter-spacing:-0.03em">Personas</h3><span class="ruta">/personas</span></div>
+<p class="gris" style="font-size:16px;line-height:1.45;margin-bottom:8px">Formulario con resultado en vivo, sin botón de calcular.</p>
+<div class="fila"><span>Campos con deslizadores y calculadora de cuota</span><span class="pill hoy">Existe hoy</span></div>
+<div class="fila"><span>Panel vivo: nivel, escala y cinco dimensiones</span><span class="pill hoy">Existe hoy</span></div>
+<div class="fila"><span>Indicadores clave con su fórmula</span><span class="pill nuevo">Nuevo · Fase 0</span></div>
+<div class="fila"><span>Tres escenarios y cambio mínimo que mejora el veredicto</span><span class="pill nuevo">Nuevo · Fase 1</span></div>
+<div class="fila"><span>Botón Generar informe</span><span class="pill nuevo">Nuevo · Fase 2</span></div>
+</div>
+
+<div class="card">
+<div style="display:flex;justify-content:space-between;gap:8px;align-items:baseline"><h3 style="font-size:26px;letter-spacing:-0.03em">Empresas</h3><span class="ruta">/empresas</span></div>
+<p class="gris" style="font-size:16px;line-height:1.45;margin-bottom:8px">Mismo patrón que Personas, con cuatro dimensiones.</p>
+<div class="fila"><span>Campos de balance y resultados, panel vivo</span><span class="pill hoy">Existe hoy</span></div>
+<div class="fila"><span>Dos cierres, promedios y serie de años</span><span class="pill nuevo">Nuevo · Fase 1</span></div>
+<div class="fila"><span>Flujo de caja y DSCR</span><span class="pill nuevo">Nuevo · Fase 1</span></div>
+<div class="fila"><span>Tres escenarios y sensibilidad</span><span class="pill nuevo">Nuevo · Fase 1</span></div>
+<div class="fila"><span>Botón Generar informe</span><span class="pill nuevo">Nuevo · Fase 2</span></div>
+<div class="fila"><span>Comparación con el sector (p10 a p90), si hay licencia</span><span class="pill nuevo">Nuevo · Fase 3</span></div>
+</div>
+
+<div class="card">
+<div style="display:flex;justify-content:space-between;gap:8px;align-items:baseline"><h3 style="font-size:26px;letter-spacing:-0.03em">Informe de diagnóstico</h3><span class="ruta">vista de impresión</span></div>
+<p class="gris" style="font-size:16px;line-height:1.45;margin-bottom:8px">Se genera en el navegador desde Personas o Empresas. No es una página del sitio.</p>
+<div class="fila"><span>Folio, fecha y versión de la metodología</span><span class="pill nuevo">Nuevo · Fase 2</span></div>
+<div class="fila"><span>Resultado por dimensión, escenarios y recomendaciones</span><span class="pill nuevo">Nuevo · Fase 2</span></div>
+<div class="fila"><span>Documentos que llevar a la entidad</span><span class="pill nuevo">Nuevo · Fase 2</span></div>
+<div class="fila"><span>Fuentes, supuestos y aviso de que es orientativo</span><span class="pill nuevo">Nuevo · Fase 2</span></div>
+</div>
+
+<div class="card">
+<div style="display:flex;justify-content:space-between;gap:8px;align-items:baseline"><h3 style="font-size:26px;letter-spacing:-0.03em">Verificar</h3><span class="ruta">/verificaciones</span></div>
+<p class="gris" style="font-size:16px;line-height:1.45;margin-bottom:8px">Lleva al titular a los canales oficiales; no consultamos a nadie.</p>
+<div class="fila"><span>Tarjetas de canales oficiales</span><span class="pill hoy">Existe hoy</span></div>
+<div class="fila"><span>Alertas de fraude</span><span class="pill hoy">Existe hoy</span></div>
+<div class="fila"><span>URLs y alertas verificadas en fuente primaria, con fecha</span><span class="pill nuevo">Nuevo · Fase 0</span></div>
+</div>
+
+<div class="card">
+<div style="display:flex;justify-content:space-between;gap:8px;align-items:baseline"><h3 style="font-size:26px;letter-spacing:-0.03em">Metodología y fuentes</h3><span class="ruta">/metodologia</span></div>
+<p class="gris" style="font-size:16px;line-height:1.45;margin-bottom:8px">La parte que un analista puede auditar.</p>
+<div class="fila"><span>Política v1 con versión visible y registro de cambios</span><span class="pill nuevo">Nuevo · Fase 1</span></div>
+<div class="fila"><span>Origen de cada umbral: norma o supuesto del proyecto</span><span class="pill nuevo">Nuevo · Fase 1</span></div>
+<div class="fila"><span>Casos de referencia publicados</span><span class="pill nuevo">Nuevo · Fase 1</span></div>
+<div class="fila"><span>Ficha técnica por indicador</span><span class="pill nuevo">Nuevo · Fase 2</span></div>
+<div class="fila"><span>Registro de fuentes con fecha, tipo y confianza</span><span class="pill nuevo">Nuevo · Fase 0</span></div>
+</div>
+
+</div>
+
+<div class="card" style="flex-direction:row;gap:16px;flex-wrap:wrap;justify-content:space-between;align-items:center">
+<div style="max-width:780px"><h3 style="font-size:22px;letter-spacing:-0.02em">Privacidad y Términos</h3><p class="gris" style="font-size:16px;line-height:1.45;margin-top:4px">/privacidad y /terminos: tarjetas cortas con el detalle en paneles plegables. Existen hoy; se revisan con un abogado y se les pone un correo de contacto real.</p></div>
+<span class="pill nuevo">Nuevo · Fase 5</span>
+</div>
+</section>
+
+<section style="display:flex;flex-direction:column;gap:28px">
+<div style="display:flex;flex-direction:column;gap:10px"><h2 style="font-size:clamp(32px,4.5vw,48px);line-height:1.08;letter-spacing:-0.04em">Cómo viaja un dato</h2><p class="gris" style="font-size:19px;line-height:1.45">Nada se envía ni se guarda en ningún paso.</p></div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px">
+<div class="card"><span class="pill hoy" style="align-self:flex-start">Paso 1</span><h3 style="font-size:22px;letter-spacing:-0.02em;margin-top:8px">Escribes tus datos</h3><p class="gris" style="font-size:15px;line-height:1.45">Con valores de ejemplo hasta tu primera edición.</p></div>
+<div class="card"><span class="pill hoy" style="align-self:flex-start">Paso 2</span><h3 style="font-size:22px;letter-spacing:-0.02em;margin-top:8px">Se calcula en tu navegador</h3><p class="gris" style="font-size:15px;line-height:1.45">Reglas por dimensión; sin servidor.</p></div>
+<div class="card"><span class="pill hoy" style="align-self:flex-start">Paso 3</span><h3 style="font-size:22px;letter-spacing:-0.02em;margin-top:8px">Ves el veredicto</h3><p class="gris" style="font-size:15px;line-height:1.45">Débil, condicionado o favorable, sin número único.</p></div>
+<div class="card"><span class="pill nuevo" style="align-self:flex-start">Paso 4 · Fase 1</span><h3 style="font-size:22px;letter-spacing:-0.02em;margin-top:8px">Pruebas escenarios</h3><p class="gris" style="font-size:15px;line-height:1.45">Base, moderado y severo.</p></div>
+<div class="card"><span class="pill nuevo" style="align-self:flex-start">Paso 5 · Fase 2</span><h3 style="font-size:22px;letter-spacing:-0.02em;margin-top:8px">Imprimes el informe</h3><p class="gris" style="font-size:15px;line-height:1.45">Con aviso de que contiene datos personales.</p></div>
+</div>
+</section>
+
+<section style="display:flex;flex-direction:column;gap:28px">
+<div style="display:flex;flex-direction:column;gap:10px"><h2 style="font-size:clamp(32px,4.5vw,48px);line-height:1.08;letter-spacing:-0.04em">Cómo se arma por dentro</h2><p class="gris" style="font-size:19px;line-height:1.45">Cuatro capas; cada una con su prueba.</p></div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px">
+<div class="card"><h3 style="font-size:22px;letter-spacing:-0.02em;margin-bottom:6px">Datos</h3>
+<div class="fila"><span>Archivos JSON con fuente, fecha, tipo y confianza en cada registro</span></div>
+<div class="fila"><span>Validados al compilar: si un dato no cumple, no se publica</span></div>
+<div class="fila"><span>Lo desconocido queda como vacío documentado</span></div></div>
+<div class="card"><h3 style="font-size:22px;letter-spacing:-0.02em;margin-bottom:6px">Lógica</h3>
+<div class="fila"><span>Reglas por dimensión y nivel global</span></div>
+<div class="fila"><span>Escenarios, indicadores y percentiles sectoriales</span></div>
+<div class="fila"><span>Pruebas unitarias y casos de referencia recalculados aparte</span></div></div>
+<div class="card"><h3 style="font-size:22px;letter-spacing:-0.02em;margin-bottom:6px">Interfaz</h3>
+<div class="fila"><span>Componentes del panel vivo, escala y plegables</span></div>
+<div class="fila"><span>Generador de informe imprimible</span></div>
+<div class="fila"><span>Sin scripts, tipografías ni imágenes de terceros</span></div></div>
+<div class="card"><h3 style="font-size:22px;letter-spacing:-0.02em;margin-bottom:6px">Calidad y entrega</h3>
+<div class="fila"><span>CI con tipos, pruebas, validación de datos y e2e</span></div>
+<div class="fila"><span>Accesibilidad y rendimiento medidos en Lighthouse</span></div>
+<div class="fila"><span>Despliegue estático con cabeceras de seguridad</span></div></div>
+</div>
+</section>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":2400}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

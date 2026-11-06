@@ -2,6 +2,12 @@
 
 Sitio público y gratuito para que personas y empresas de Ecuador se **autoevalúen** como sujetos de crédito, con estimaciones orientativas y enlaces a las verificaciones oficiales. El alcance es **solo elegibilidad de crédito**: no incluye simulador ni panel de mercado. La interfaz calcula en vivo (sin botón): los formularios arrancan con valores de ejemplo rotulados como tales, y el texto largo vive en paneles plegables.
 
+## Plan y diseño
+
+- [`docs/plan-de-profesionalizacion.md`](docs/plan-de-profesionalizacion.md): plan por fases (0 a 5), alcance y línea roja, brechas frente a nivel buró, hitos, métricas y riesgos.
+- [`diseno/esqueleto/`](diseno/esqueleto/): fuentes del esqueleto de diseño pantalla por pantalla.
+- [`prototipos/`](prototipos/): versiones HTML de un solo archivo para revisar sin instalar nada.
+
 ## Principios de diseño
 
 - **Sin datos de terceros.** El Registro de Datos Crediticios (COMF art. 357) solo se entrega al titular o a quien él autorice. El sitio no consulta burós, SRI ni superintendencias: enlaza a sus canales oficiales.

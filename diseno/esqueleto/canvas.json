@@ -1,0 +1,92 @@
+{
+  "v": 3,
+  "attachments": {},
+  "boards": {
+    "Main.dc.html": {
+      "expand": "fill",
+      "h": 2400,
+      "title": "Mapa del producto",
+      "w": 1280,
+      "x": 0,
+      "y": 0
+    },
+    "Personas.dc.html": {
+      "expand": "fill",
+      "h": 1750,
+      "title": "2 · Personas",
+      "w": 1280,
+      "x": 0,
+      "y": 2520
+    },
+    "Empresas.dc.html": {
+      "expand": "fill",
+      "h": 2300,
+      "title": "3 · Empresas",
+      "w": 1280,
+      "x": 0,
+      "y": 4390
+    },
+    "Portada.dc.html": {
+      "expand": "fill",
+      "h": 4800,
+      "title": "1 · Portada · azul + lima",
+      "w": 1280,
+      "x": 1360,
+      "y": 0,
+      "is_interactive": true
+    },
+    "Metodologia.dc.html": {
+      "expand": "fill",
+      "h": 1700,
+      "title": "5 · Metodología y fuentes",
+      "w": 1280,
+      "x": 1360,
+      "y": 4920
+    },
+    "LineaGrafica.dc.html": {
+      "expand": "fill",
+      "h": 3300,
+      "title": "Línea gráfica",
+      "w": 1280,
+      "x": 2720,
+      "y": 0
+    },
+    "Informe.dc.html": {
+      "expand": "fill",
+      "h": 1500,
+      "title": "4 · Informe de diagnóstico",
+      "w": 1280,
+      "x": 2720,
+      "y": 3420
+    }
+  },
+  "createdOnFiles": {
+    "at": "2026-11-05T12:00:00Z",
+    "v": 1
+  },
+  "designSystems": [],
+  "launch": {
+    "view": "canvas"
+  },
+  "notes": {
+    "titulo": {
+      "kind": "title1",
+      "maxW": 4000,
+      "text": "Esqueleto del producto",
+      "w": 240,
+      "x": 0,
+      "y": -300
+    }
+  },
+  "order": [
+    "Main.dc.html",
+    "Portada.dc.html",
+    "Personas.dc.html",
+    "Empresas.dc.html",
+    "Informe.dc.html",
+    "Metodologia.dc.html",
+    "LineaGrafica.dc.html"
+  ],
+  "pages": [],
+  "title": "Esqueleto: ¿Soy sujeto de crédito? Ecuador"
+}
