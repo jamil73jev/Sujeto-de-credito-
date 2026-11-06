@@ -4,7 +4,7 @@
 
 ## 1. Qué es el sitio
 Herramienta gratuita y orientativa para que personas y empresas de Ecuador se autoevalúen como sujetos de crédito: ven qué miran las entidades y qué podrían mejorar. **No** es un buró, no emite score, no consulta historiales, no aprueba ni preaprueba créditos. Para ver el historial real enlaza a los canales oficiales (Superintendencia de Bancos, SRI, etc.).
-Operador: pendiente de definir (ver pregunta 1). Nombre de marca: provisional («¿Soy sujeto de crédito? Ecuador»). Correo de contacto: thundertech73@gmail.com.
+Operador: pendiente de definir (ver pregunta 1). Nombre de marca: «Listo para Crédito» (antes «¿Soy sujeto de crédito? Ecuador»); falta verificar la marca en SENADI y el dominio .ec. Correo de contacto: thundertech73@gmail.com.
 
 ## 2. Qué datos se tratan, dónde y por cuánto tiempo
 | Dato | Dónde ocurre | ¿Se envía o se guarda? |

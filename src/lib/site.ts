@@ -3,7 +3,7 @@ export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:30
 export const CONTACTO_EMAIL = process.env.NEXT_PUBLIC_CONTACT_EMAIL ?? "thundertech73@gmail.com";
 /** Versión de prueba: no se indexa y muestra un aviso. Se apaga (NEXT_PUBLIC_BETA=0 o sin definir) al lanzar. */
 export const ES_BETA = process.env.NEXT_PUBLIC_BETA === "1";
-export const SITE_NAME = "¿Soy sujeto de crédito? Ecuador";
+export const SITE_NAME = "Listo para Crédito";
 export const SITE_DESCRIPTION =
   "Autoevaluación orientativa, gratuita y sin registro para personas y empresas de Ecuador: qué miran las entidades, y cómo verificar tu historial en canales oficiales.";
 

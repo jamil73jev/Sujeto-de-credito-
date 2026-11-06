@@ -11,7 +11,7 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { pathToFileURL } from "node:url";
 import { resolve } from "node:path";
 
-const url = pathToFileURL(resolve("dist/sujeto-credito-ec.html")).href;
+const url = pathToFileURL(resolve("dist/listo-para-credito.html")).href;
 const actualizar = process.argv.includes("--update");
 const CARPETA = resolve("tests/visual");
 const TOLERANCIA_PIXELES = 0.01; // 1 % de píxeles distintos

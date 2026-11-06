@@ -4,6 +4,9 @@ Formato basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/).
 
 ## [Sin publicar]
 
+### Cambiado
+- **Nuevo nombre del proyecto: «Listo para Crédito»** (antes «¿Soy sujeto de crédito? Ecuador»). Se actualizan la marca del sitio y del informe, el título de la página, la documentación, las fuentes de diseño y el nombre del archivo de un solo HTML (`dist/listo-para-credito.html`). No cambian el alcance, la metodología ni los datos.
+
 ### Agregado
 - `docs/diseno.md` con el mapa del producto, la portada «azul + lima» y la línea gráfica (colores, tipografía, componentes y reglas), con capturas en `docs/img/`.
 

@@ -1,6 +1,8 @@
 # Diseño del producto: mapa, portada y línea gráfica
 
-Este documento resume el diseño de **¿Soy sujeto de crédito? Ecuador**: qué pantallas tiene el sitio, cómo viaja un dato, cómo es la portada «azul + lima» y qué reglas siguen los colores, la tipografía y los componentes. Las imágenes son capturas del lienzo de diseño; las fuentes están en [`../diseno/esqueleto/`](../diseno/esqueleto/) y una versión que se abre en el navegador, en [`../prototipos/esqueleto-sujeto-de-credito-ecuador.html`](../prototipos/esqueleto-sujeto-de-credito-ecuador.html).
+Este documento resume el diseño de **Listo para Crédito**: qué pantallas tiene el sitio, cómo viaja un dato, cómo es la portada «azul + lima» y qué reglas siguen los colores, la tipografía y los componentes. Las imágenes son capturas del lienzo de diseño; las fuentes están en [`../diseno/esqueleto/`](../diseno/esqueleto/) y una versión que se abre en el navegador, en [`../prototipos/esqueleto-sujeto-de-credito-ecuador.html`](../prototipos/esqueleto-sujeto-de-credito-ecuador.html).
+
+> **Sobre el nombre.** El proyecto se llamaba «¿Soy sujeto de crédito? Ecuador» y ahora se llama **Listo para Crédito**. Las capturas y los prototipos de `prototipos/` conservan el nombre anterior porque son instantáneas del diseño original; las fuentes de `diseno/esqueleto/` y el sitio ya usan el nombre nuevo. La pregunta «¿Soy sujeto de crédito?» se mantiene como titular de la portada, no como marca.
 
 ## 1. Mapa del producto
 

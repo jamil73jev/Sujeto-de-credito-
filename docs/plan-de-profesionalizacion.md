@@ -1,4 +1,4 @@
-# Plan de profesionalización: ¿Soy sujeto de crédito?
+# Plan de profesionalización: Listo para Crédito
 
 Nov 5, 2026 · @jamil
 

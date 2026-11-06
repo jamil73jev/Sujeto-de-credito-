@@ -17,7 +17,7 @@ import { datos } from "@/lib/datos";
 import { RUTAS } from "@/lib/site";
 
 const PAGINAS: Record<string, { Componente: ComponentType; titulo: string }> = {
-  "/": { Componente: Inicio, titulo: "¿Soy sujeto de crédito? Ecuador" },
+  "/": { Componente: Inicio, titulo: "Listo para Crédito" },
   "/personas": { Componente: PaginaPersonas, titulo: "Personas" },
   "/empresas": { Componente: PaginaEmpresas, titulo: "Empresas" },
   "/verificaciones": { Componente: PaginaVerificaciones, titulo: "Verificaciones oficiales" },
@@ -73,7 +73,7 @@ function App() {
       <header className="cabecera">
         <div className="contenedor">
           <a className="marca" href="/">
-            ¿Soy sujeto de crédito?
+            Listo para Crédito
           </a>
           <nav className="nav" aria-label="Principal">
             {RUTAS.map((r) => (

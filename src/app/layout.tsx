@@ -51,7 +51,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           ) : null}
           <div className="contenedor">
             <Link className="marca" href="/">
-              ¿Soy sujeto de crédito?
+              Listo para Crédito
             </Link>
             <Navegacion />
           </div>

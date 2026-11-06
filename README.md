@@ -1,4 +1,6 @@
-# ¿Soy sujeto de crédito? Ecuador
+# Listo para Crédito
+
+> Antes llamado «¿Soy sujeto de crédito? Ecuador». El cambio de nombre es solo de marca: el alcance, la metodología y los datos no cambian.
 
 Sitio público y gratuito para que personas y empresas de Ecuador se **autoevalúen** como sujetos de crédito, con estimaciones orientativas y enlaces a las verificaciones oficiales. El alcance es **solo elegibilidad de crédito**: no incluye simulador ni panel de mercado. La interfaz calcula en vivo (sin botón): los formularios arrancan con valores de ejemplo rotulados como tales, y el texto largo vive en paneles plegables.
 
@@ -44,7 +46,7 @@ Comprobaciones (las mismas que corre CI): `npm run check` (tipos + pruebas + val
 | `src/app/` | Páginas: inicio, personas, empresas (elegibilidad), verificaciones oficiales y alertas, metodología, privacidad, términos, `/api/health` |
 | `scripts/validate-data.ts` | Validación: esquemas, ids únicos, bandas de score, benchmarks (n ≥ 30, percentiles ordenados), vigencia |
 | `scripts/build-benchmarks.ts` | Calcula `data/benchmarks_sector.json` desde un CSV que tú descargas (ver abajo) |
-| `scripts/build-html.mjs` | Genera `dist/sujeto-credito-ec.html`, versión de un solo archivo para probar (`npm i -D esbuild`, luego `npm run build:html`) |
+| `scripts/build-html.mjs` | Genera `dist/listo-para-credito.html`, versión de un solo archivo para probar (`npm i -D esbuild`, luego `npm run build:html`) |
 | `tests/` | Pruebas con vitest |
 
 ## Despliegue (Vercel)

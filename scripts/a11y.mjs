@@ -11,7 +11,7 @@ import { resolve } from "node:path";
 
 // Con A11Y_BASE=http://127.0.0.1:3123 audita el sitio real de Next.js; si no, el HTML de un solo archivo.
 const BASE = process.env.A11Y_BASE;
-const url = pathToFileURL(resolve("dist/sujeto-credito-ec.html")).href;
+const url = pathToFileURL(resolve("dist/listo-para-credito.html")).href;
 const destino = (ruta) => (BASE ? BASE + ruta : url + "#" + ruta);
 const RUTAS = ["/", "/personas", "/empresas", "/verificaciones", "/metodologia", "/privacidad", "/terminos", "/comentarios"];
 const ETIQUETAS = ["wcag2a", "wcag2aa", "wcag21a", "wcag21aa", "wcag22aa", "best-practice"];

@@ -31,7 +31,7 @@ export function InformeDocumento({
     <article className="informe" aria-labelledby="informe-titulo">
       <header className="informe-cabecera">
         <p className="informe-marca">
-          ¿Soy sujeto de crédito? · Diagnóstico orientativo
+          Listo para Crédito · Diagnóstico orientativo
         </p>
         <h1 id="informe-titulo">
           Informe de diagnóstico {esPersona ? "personal" : "de empresa"}

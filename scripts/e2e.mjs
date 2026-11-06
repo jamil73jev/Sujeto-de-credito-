@@ -1,5 +1,5 @@
 /**
- * Prueba de extremo a extremo sobre el HTML de un solo archivo (dist/sujeto-credito-ec.html).
+ * Prueba de extremo a extremo sobre el HTML de un solo archivo (dist/listo-para-credito.html).
  * Comprueba el flujo principal y que el sitio no hace ninguna petición de red.
  * Uso: npm run build:html && npm run e2e
  */
@@ -9,7 +9,7 @@ import { resolve } from "node:path";
 
 // Por defecto prueba el HTML de un solo archivo; con E2E_BASE=http://127.0.0.1:3123 prueba el sitio real de Next.js.
 const BASE = process.env.E2E_BASE;
-const url = pathToFileURL(resolve("dist/sujeto-credito-ec.html")).href;
+const url = pathToFileURL(resolve("dist/listo-para-credito.html")).href;
 const destino = (ruta) => (BASE ? BASE + ruta : url + "#" + ruta);
 const fallos = [];
 const comprobar = (ok, mensaje) => {

@@ -1,6 +1,6 @@
-# Aviso de uso y propiedad intelectual: ¿Soy sujeto de crédito? Ecuador
+# Aviso de uso y propiedad intelectual: Listo para Crédito
 
-**¿Soy sujeto de crédito? Ecuador** es un sitio gratuito de autoevaluación para personas y empresas de Ecuador. Este repositorio es público y contiene su código, sus datos de referencia y su documentación.
+**Listo para Crédito** es un sitio gratuito de autoevaluación para personas y empresas de Ecuador. Este repositorio es público y contiene su código, sus datos de referencia y su documentación.
 
 ## Autoría
 

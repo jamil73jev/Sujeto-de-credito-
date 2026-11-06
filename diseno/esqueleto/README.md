@@ -1,6 +1,6 @@
 # Esqueleto del producto (diseño)
 
-Fuentes del lienzo de diseño **«Esqueleto: ¿Soy sujeto de crédito? Ecuador»**: un mapa pantalla por pantalla de lo que se construye y en qué fase del [plan de profesionalización](../../docs/plan-de-profesionalizacion.md) llega cada pieza (etiquetas «Existe hoy» y «Nuevo · Fase N»).
+Fuentes del lienzo de diseño **«Esqueleto: Listo para Crédito»**: un mapa pantalla por pantalla de lo que se construye y en qué fase del [plan de profesionalización](../../docs/plan-de-profesionalizacion.md) llega cada pieza (etiquetas «Existe hoy» y «Nuevo · Fase N»).
 
 | Archivo | Contenido |
 | --- | --- |

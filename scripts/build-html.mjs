@@ -9,7 +9,7 @@ import { fileURLToPath } from "node:url";
 import { build } from "esbuild";
 
 const raiz = resolve(dirname(fileURLToPath(import.meta.url)), "..");
-const salida = resolve(process.argv[2] ?? resolve(raiz, "dist/sujeto-credito-ec.html"));
+const salida = resolve(process.argv[2] ?? resolve(raiz, "dist/listo-para-credito.html"));
 
 const shims = {
   "next/link": resolve(raiz, "scripts/html/shim-link.tsx"),
@@ -50,7 +50,7 @@ const html = `<!doctype html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="color-scheme" content="light dark">
-<title>¿Soy sujeto de crédito? Ecuador</title>
+<title>Listo para Crédito</title>
 <style>${css}</style>
 </head>
 <body>

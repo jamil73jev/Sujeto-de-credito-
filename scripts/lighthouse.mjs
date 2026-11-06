@@ -20,7 +20,7 @@ const BASE = process.env.LIGHTHOUSE_BASE;
 let servidor = null;
 let urlDe = (ruta) => `${BASE}${ruta}`;
 if (!BASE) {
-  const html = readFileSync(resolve("dist/sujeto-credito-ec.html"));
+  const html = readFileSync(resolve("dist/listo-para-credito.html"));
   servidor = createServer((_req, res) => {
     res.writeHead(200, { "content-type": "text/html; charset=utf-8" });
     res.end(html);
