@@ -1,0 +1,145 @@
+{
+  "version": 2,
+  "rango_min": 1,
+  "rango_max": 999,
+  "nota": "Los burós elaboran el score con modelos propios y no publican pesos, horizonte ni calibración. Las bandas son referenciales (Programa de Educación Financiera), no una escala oficial única. Ecuavisa (29-09-2026) cita un rango de 0 a 999 para el score comentado por Equifax: no todas las fuentes coinciden en la escala. Cada entidad aplica sus propios cortes.",
+  "bandas": [
+    {
+      "id": "excelente",
+      "desde": 911,
+      "hasta": 999,
+      "etiqueta": "Excelentes pagadores",
+      "interpretacion": "Banda más alta según el Programa de Educación Financiera.",
+      "oficial": false,
+      "traza": {
+        "fuente_nombre": "Programa de Educación Financiera, vía El Diario",
+        "fuente_url": "https://www.eldiario.ec/negocios/score-crediticio-cual-es-el-puntaje-ideal-para-obtener-un-prestamo-en-ecuador-16052025/",
+        "fecha_publicacion": "2025-05-16",
+        "fecha_consulta": "2026-11-05",
+        "tipo": "hecho",
+        "confianza": "media",
+        "desactualizado": false
+      }
+    },
+    {
+      "id": "con-riesgo",
+      "desde": 376,
+      "hasta": 910,
+      "etiqueta": "Pagadores con riesgo",
+      "interpretacion": "Banda intermedia: amplia, con condiciones que dependen de cada entidad.",
+      "oficial": false,
+      "traza": {
+        "fuente_nombre": "Programa de Educación Financiera, vía El Diario",
+        "fuente_url": "https://www.eldiario.ec/negocios/score-crediticio-cual-es-el-puntaje-ideal-para-obtener-un-prestamo-en-ecuador-16052025/",
+        "fecha_publicacion": "2025-05-16",
+        "fecha_consulta": "2026-11-05",
+        "tipo": "hecho",
+        "confianza": "media",
+        "desactualizado": false
+      }
+    },
+    {
+      "id": "morosos",
+      "desde": 1,
+      "hasta": 375,
+      "etiqueta": "Pagadores morosos",
+      "interpretacion": "Banda más baja según el Programa de Educación Financiera.",
+      "oficial": false,
+      "traza": {
+        "fuente_nombre": "Programa de Educación Financiera, vía El Diario",
+        "fuente_url": "https://www.eldiario.ec/negocios/score-crediticio-cual-es-el-puntaje-ideal-para-obtener-un-prestamo-en-ecuador-16052025/",
+        "fecha_publicacion": "2025-05-16",
+        "fecha_consulta": "2026-11-05",
+        "tipo": "hecho",
+        "confianza": "media",
+        "desactualizado": false
+      }
+    }
+  ],
+  "referencias": [
+    {
+      "id": "favorable-desde",
+      "valor": 650,
+      "descripcion": "Un score de 650 o más suele ser un buen punto de partida, pero no garantiza la aprobación.",
+      "traza": {
+        "fuente_nombre": "Nota de prensa sobre lo que ven los bancos",
+        "fuente_url": "https://kchcomunicacion.com/?p=321363",
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "interpretacion",
+        "confianza": "baja",
+        "desactualizado": false
+      }
+    },
+    {
+      "id": "rechazo-frecuente-bajo",
+      "valor": 300,
+      "descripcion": "Las entidades suelen rechazar solicitudes con un score menor a 300.",
+      "traza": {
+        "fuente_nombre": "El Diario: más de un millón con score bajo",
+        "fuente_url": "https://www.eldiario.ec/ecuador/mas-de-un-millon-de-ecuatorianos-con-calificacion-crediticia-baja-es-decir-menos-de-300-puntos-28112025/",
+        "fecha_publicacion": "2025-11-28",
+        "fecha_consulta": "2026-11-05",
+        "tipo": "hecho",
+        "confianza": "media",
+        "desactualizado": false
+      }
+    },
+    {
+      "id": "escala",
+      "valor": 999,
+      "descripcion": "El score va de 1 a 999 y estima la probabilidad de un atraso de 60 días o más en los siguientes 12 meses.",
+      "traza": {
+        "fuente_nombre": "Extra: score del 1 al 999",
+        "fuente_url": "https://www.extra.ec/noticia/economia/score-crediticio-ecuador-1-999-funciona-mejorarlo-acceder-creditos-161166.html",
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "hecho",
+        "confianza": "media",
+        "desactualizado": false
+      }
+    },
+    {
+      "id": "muy-bueno",
+      "valor": 750,
+      "descripcion": "Fideval considera muy bueno un score superior a 750.",
+      "traza": {
+        "fuente_nombre": "Fideval",
+        "fuente_url": "https://www.fideval.com/blog/1/buro-de-credito-en-ecuador-por-que-importa-y-como-define-tu-futuro-financiero/",
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "interpretacion",
+        "confianza": "baja",
+        "desactualizado": false
+      }
+    },
+    {
+      "id": "banco-guayaquil-tarjeta",
+      "valor": 750,
+      "descripcion": "Banco Guayaquil publica un puntaje mínimo de 750 para su tarjeta de crédito. No es un corte para todos sus préstamos.",
+      "traza": {
+        "fuente_nombre": "Ayuda de Banco Guayaquil, según investigación aportada",
+        "fuente_url": "https://ayuda.bancoguayaquil.com/hc/es/articles/360023670491--C%C3%B3mo-solicito-una-Tarjeta-de-Cr%C3%A9dito",
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "hecho",
+        "confianza": "media",
+        "desactualizado": false
+      }
+    },
+    {
+      "id": "banecuador-micro-preferencial",
+      "valor": 850,
+      "descripcion": "BanEcuador publica un score desde 850 para su microcrédito preferencial. Es un requisito de ese producto.",
+      "traza": {
+        "fuente_nombre": "Sitio de BanEcuador, según investigación aportada",
+        "fuente_url": "https://www.banecuador.fin.ec/creditopersonas/creditomicroempresa/micropreferencial/",
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "hecho",
+        "confianza": "media",
+        "desactualizado": false
+      }
+    }
+  ]
+}

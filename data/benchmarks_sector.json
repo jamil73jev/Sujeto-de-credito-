@@ -1,0 +1,6 @@
+{
+  "version": 2,
+  "estado": "pendiente",
+  "nota": "Sin benchmarks hasta calcularlos con el ranking de la Superintendencia de Compañías (CSV) y confirmar sus condiciones de reutilización. Se publican solo celdas CIIU, tamaño y año con al menos 30 empresas válidas; si hay menos, se agrega a un CIIU superior. Los percentiles son metodológicos y se calculan a partir de datos reales; no hay valores de ejemplo.",
+  "registros": []
+}

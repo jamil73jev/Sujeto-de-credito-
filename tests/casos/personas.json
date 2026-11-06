@@ -1,0 +1,1064 @@
+[
+ {
+  "id": "P01",
+  "descripcion": "Perfil sano, dependencia, sin mora",
+  "entrada": {
+   "edad": 32,
+   "tipoIngreso": "dependencia",
+   "mesesIngresoEstable": 24,
+   "ingresoMensual": 1500,
+   "gastosEsenciales": 600,
+   "cuotasMensualesActuales": 100,
+   "cuotaNuevaEstimada": 200,
+   "scoreConocido": 700,
+   "moraActual": "no",
+   "estres": {
+    "reduccionIngresoPct": 20,
+    "aumentoCuotasPct": 0
+   },
+   "documentos": {
+    "listos": 3,
+    "total": 3
+   }
+  },
+  "esperado": {
+   "nivel": "favorable",
+   "ratioCuotasPct": 20.0,
+   "ingresoDisponible": 600.0,
+   "ratioEstresPct": 25.0,
+   "estados": {
+    "edad": "cumple",
+    "estabilidad": "cumple",
+    "endeudamiento": "cumple",
+    "ingreso_disponible": "cumple",
+    "mora": "cumple",
+    "score": "cumple",
+    "resiliencia": "cumple",
+    "documentos": "cumple"
+   }
+  }
+ },
+ {
+  "id": "P02",
+  "descripcion": "Perfil de ejemplo del sitio (sin docs ni score)",
+  "entrada": {
+   "edad": 32,
+   "tipoIngreso": "dependencia",
+   "mesesIngresoEstable": 24,
+   "ingresoMensual": 900,
+   "gastosEsenciales": 450,
+   "cuotasMensualesActuales": 120,
+   "cuotaNuevaEstimada": 90,
+   "scoreConocido": null,
+   "moraActual": "no",
+   "estres": {
+    "reduccionIngresoPct": 20,
+    "aumentoCuotasPct": 0
+   },
+   "documentos": null
+  },
+  "esperado": {
+   "nivel": "favorable",
+   "ratioCuotasPct": 23.3333333333333,
+   "ingresoDisponible": 240.0,
+   "ratioEstresPct": 29.1666666666667,
+   "estados": {
+    "edad": "cumple",
+    "estabilidad": "cumple",
+    "endeudamiento": "cumple",
+    "ingreso_disponible": "cumple",
+    "mora": "cumple",
+    "score": "sin_dato",
+    "resiliencia": "cumple",
+    "documentos": "sin_dato"
+   }
+  }
+ },
+ {
+  "id": "P03",
+  "descripcion": "Cuotas exactamente en el máximo (30 %): límite = atención",
+  "entrada": {
+   "edad": 30,
+   "tipoIngreso": "dependencia",
+   "mesesIngresoEstable": 12,
+   "ingresoMensual": 1000,
+   "gastosEsenciales": 300,
+   "cuotasMensualesActuales": 200,
+   "cuotaNuevaEstimada": 100,
+   "scoreConocido": null,
+   "moraActual": "no",
+   "estres": {
+    "reduccionIngresoPct": 20,
+    "aumentoCuotasPct": 0
+   },
+   "documentos": null
+  },
+  "esperado": {
+   "nivel": "condicionado",
+   "ratioCuotasPct": 30.0,
+   "ingresoDisponible": 400.0,
+   "ratioEstresPct": 37.5,
+   "estados": {
+    "edad": "cumple",
+    "estabilidad": "cumple",
+    "endeudamiento": "atencion",
+    "ingreso_disponible": "cumple",
+    "mora": "cumple",
+    "score": "sin_dato",
+    "resiliencia": "atencion",
+    "documentos": "sin_dato"
+   }
+  }
+ },
+ {
+  "id": "P04",
+  "descripcion": "Cuotas en 29,9 % sin estrés (cumple)",
+  "entrada": {
+   "edad": 30,
+   "tipoIngreso": "dependencia",
+   "mesesIngresoEstable": 12,
+   "ingresoMensual": 1000,
+   "gastosEsenciales": 300,
+   "cuotasMensualesActuales": 200,
+   "cuotaNuevaEstimada": 99,
+   "scoreConocido": null,
+   "moraActual": "no",
+   "estres": {
+    "reduccionIngresoPct": 0,
+    "aumentoCuotasPct": 0
+   },
+   "documentos": null
+  },
+  "esperado": {
+   "nivel": "favorable",
+   "ratioCuotasPct": 29.9,
+   "ingresoDisponible": 401.0,
+   "ratioEstresPct": 29.9,
+   "estados": {
+    "edad": "cumple",
+    "estabilidad": "cumple",
+    "endeudamiento": "cumple",
+    "ingreso_disponible": "cumple",
+    "mora": "cumple",
+    "score": "sin_dato",
+    "resiliencia": "cumple",
+    "documentos": "sin_dato"
+   }
+  }
+ },
+ {
+  "id": "P05",
+  "descripcion": "Cuotas exactamente en 50 % (atención, límite superior)",
+  "entrada": {
+   "edad": 30,
+   "tipoIngreso": "dependencia",
+   "mesesIngresoEstable": 12,
+   "ingresoMensual": 1000,
+   "gastosEsenciales": 200,
+   "cuotasMensualesActuales": 300,
+   "cuotaNuevaEstimada": 200,
+   "scoreConocido": null,
+   "moraActual": "no",
+   "estres": {
+    "reduccionIngresoPct": 20,
+    "aumentoCuotasPct": 0
+   },
+   "documentos": null
+  },
+  "esperado": {
+   "nivel": "condicionado",
+   "ratioCuotasPct": 50.0,
+   "ingresoDisponible": 300.0,
+   "ratioEstresPct": 62.5,
+   "estados": {
+    "edad": "cumple",
+    "estabilidad": "cumple",
+    "endeudamiento": "atencion",
+    "ingreso_disponible": "cumple",
+    "mora": "cumple",
+    "score": "sin_dato",
+    "resiliencia": "atencion",
+    "documentos": "sin_dato"
+   }
+  }
+ },
+ {
+  "id": "P06",
+  "descripcion": "Cuotas en 50,1 % (no cumple)",
+  "entrada": {
+   "edad": 30,
+   "tipoIngreso": "dependencia",
+   "mesesIngresoEstable": 12,
+   "ingresoMensual": 1000,
+   "gastosEsenciales": 200,
+   "cuotasMensualesActuales": 300,
+   "cuotaNuevaEstimada": 201,
+   "scoreConocido": null,
+   "moraActual": "no",
+   "estres": {
+    "reduccionIngresoPct": 20,
+    "aumentoCuotasPct": 0
+   },
+   "documentos": null
+  },
+  "esperado": {
+   "nivel": "debil",
+   "ratioCuotasPct": 50.1,
+   "ingresoDisponible": 299.0,
+   "ratioEstresPct": 62.625,
+   "estados": {
+    "edad": "cumple",
+    "estabilidad": "cumple",
+    "endeudamiento": "no_cumple",
+    "ingreso_disponible": "cumple",
+    "mora": "cumple",
+    "score": "sin_dato",
+    "resiliencia": "atencion",
+    "documentos": "sin_dato"
+   }
+  }
+ },
+ {
+  "id": "P07",
+  "descripcion": "Menor de edad",
+  "entrada": {
+   "edad": 17,
+   "tipoIngreso": "dependencia",
+   "mesesIngresoEstable": 24,
+   "ingresoMensual": 1500,
+   "gastosEsenciales": 300,
+   "cuotasMensualesActuales": 0,
+   "cuotaNuevaEstimada": 100,
+   "scoreConocido": null,
+   "moraActual": "no",
+   "estres": {
+    "reduccionIngresoPct": 20,
+    "aumentoCuotasPct": 0
+   },
+   "documentos": null
+  },
+  "esperado": {
+   "nivel": "debil",
+   "ratioCuotasPct": 6.66666666666667,
+   "ingresoDisponible": 1100.0,
+   "ratioEstresPct": 8.33333333333333,
+   "estados": {
+    "edad": "no_cumple",
+    "estabilidad": "cumple",
+    "endeudamiento": "cumple",
+    "ingreso_disponible": "cumple",
+    "mora": "cumple",
+    "score": "sin_dato",
+    "resiliencia": "cumple",
+    "documentos": "sin_dato"
+   }
+  }
+ },
+ {
+  "id": "P08",
+  "descripcion": "Justo 18 años",
+  "entrada": {
+   "edad": 18,
+   "tipoIngreso": "dependencia",
+   "mesesIngresoEstable": 12,
+   "ingresoMensual": 1200,
+   "gastosEsenciales": 300,
+   "cuotasMensualesActuales": 0,
+   "cuotaNuevaEstimada": 100,
+   "scoreConocido": null,
+   "moraActual": "no",
+   "estres": {
+    "reduccionIngresoPct": 20,
+    "aumentoCuotasPct": 0
+   },
+   "documentos": null
+  },
+  "esperado": {
+   "nivel": "favorable",
+   "ratioCuotasPct": 8.33333333333333,
+   "ingresoDisponible": 800.0,
+   "ratioEstresPct": 10.4166666666667,
+   "estados": {
+    "edad": "cumple",
+    "estabilidad": "cumple",
+    "endeudamiento": "cumple",
+    "ingreso_disponible": "cumple",
+    "mora": "cumple",
+    "score": "sin_dato",
+    "resiliencia": "cumple",
+    "documentos": "sin_dato"
+   }
+  }
+ },
+ {
+  "id": "P09",
+  "descripcion": "Dependencia con 6 meses exactos: límite = atención",
+  "entrada": {
+   "edad": 25,
+   "tipoIngreso": "dependencia",
+   "mesesIngresoEstable": 6,
+   "ingresoMensual": 1200,
+   "gastosEsenciales": 400,
+   "cuotasMensualesActuales": 0,
+   "cuotaNuevaEstimada": 150,
+   "scoreConocido": null,
+   "moraActual": "no",
+   "estres": {
+    "reduccionIngresoPct": 20,
+    "aumentoCuotasPct": 0
+   },
+   "documentos": null
+  },
+  "esperado": {
+   "nivel": "condicionado",
+   "ratioCuotasPct": 12.5,
+   "ingresoDisponible": 650.0,
+   "ratioEstresPct": 15.625,
+   "estados": {
+    "edad": "cumple",
+    "estabilidad": "atencion",
+    "endeudamiento": "cumple",
+    "ingreso_disponible": "cumple",
+    "mora": "cumple",
+    "score": "sin_dato",
+    "resiliencia": "cumple",
+    "documentos": "sin_dato"
+   }
+  }
+ },
+ {
+  "id": "P10",
+  "descripcion": "Dependencia con 5 meses (atención)",
+  "entrada": {
+   "edad": 25,
+   "tipoIngreso": "dependencia",
+   "mesesIngresoEstable": 5,
+   "ingresoMensual": 1200,
+   "gastosEsenciales": 400,
+   "cuotasMensualesActuales": 0,
+   "cuotaNuevaEstimada": 150,
+   "scoreConocido": null,
+   "moraActual": "no",
+   "estres": {
+    "reduccionIngresoPct": 20,
+    "aumentoCuotasPct": 0
+   },
+   "documentos": null
+  },
+  "esperado": {
+   "nivel": "condicionado",
+   "ratioCuotasPct": 12.5,
+   "ingresoDisponible": 650.0,
+   "ratioEstresPct": 15.625,
+   "estados": {
+    "edad": "cumple",
+    "estabilidad": "atencion",
+    "endeudamiento": "cumple",
+    "ingreso_disponible": "cumple",
+    "mora": "cumple",
+    "score": "sin_dato",
+    "resiliencia": "cumple",
+    "documentos": "sin_dato"
+   }
+  }
+ },
+ {
+  "id": "P11",
+  "descripcion": "Dependencia con 0 meses (no cumple)",
+  "entrada": {
+   "edad": 25,
+   "tipoIngreso": "dependencia",
+   "mesesIngresoEstable": 0,
+   "ingresoMensual": 1200,
+   "gastosEsenciales": 400,
+   "cuotasMensualesActuales": 0,
+   "cuotaNuevaEstimada": 150,
+   "scoreConocido": null,
+   "moraActual": "no",
+   "estres": {
+    "reduccionIngresoPct": 20,
+    "aumentoCuotasPct": 0
+   },
+   "documentos": null
+  },
+  "esperado": {
+   "nivel": "debil",
+   "ratioCuotasPct": 12.5,
+   "ingresoDisponible": 650.0,
+   "ratioEstresPct": 15.625,
+   "estados": {
+    "edad": "cumple",
+    "estabilidad": "no_cumple",
+    "endeudamiento": "cumple",
+    "ingreso_disponible": "cumple",
+    "mora": "cumple",
+    "score": "sin_dato",
+    "resiliencia": "cumple",
+    "documentos": "sin_dato"
+   }
+  }
+ },
+ {
+  "id": "P12",
+  "descripcion": "Independiente con 3 meses exactos: límite = atención",
+  "entrada": {
+   "edad": 40,
+   "tipoIngreso": "independiente",
+   "mesesIngresoEstable": 3,
+   "ingresoMensual": 1500,
+   "gastosEsenciales": 500,
+   "cuotasMensualesActuales": 0,
+   "cuotaNuevaEstimada": 200,
+   "scoreConocido": null,
+   "moraActual": "no",
+   "estres": {
+    "reduccionIngresoPct": 20,
+    "aumentoCuotasPct": 0
+   },
+   "documentos": null
+  },
+  "esperado": {
+   "nivel": "condicionado",
+   "ratioCuotasPct": 13.3333333333333,
+   "ingresoDisponible": 800.0,
+   "ratioEstresPct": 16.6666666666667,
+   "estados": {
+    "edad": "cumple",
+    "estabilidad": "atencion",
+    "endeudamiento": "cumple",
+    "ingreso_disponible": "cumple",
+    "mora": "cumple",
+    "score": "sin_dato",
+    "resiliencia": "cumple",
+    "documentos": "sin_dato"
+   }
+  }
+ },
+ {
+  "id": "P13",
+  "descripcion": "Independiente con 2 meses (atención)",
+  "entrada": {
+   "edad": 40,
+   "tipoIngreso": "independiente",
+   "mesesIngresoEstable": 2,
+   "ingresoMensual": 1500,
+   "gastosEsenciales": 500,
+   "cuotasMensualesActuales": 0,
+   "cuotaNuevaEstimada": 200,
+   "scoreConocido": null,
+   "moraActual": "no",
+   "estres": {
+    "reduccionIngresoPct": 20,
+    "aumentoCuotasPct": 0
+   },
+   "documentos": null
+  },
+  "esperado": {
+   "nivel": "condicionado",
+   "ratioCuotasPct": 13.3333333333333,
+   "ingresoDisponible": 800.0,
+   "ratioEstresPct": 16.6666666666667,
+   "estados": {
+    "edad": "cumple",
+    "estabilidad": "atencion",
+    "endeudamiento": "cumple",
+    "ingreso_disponible": "cumple",
+    "mora": "cumple",
+    "score": "sin_dato",
+    "resiliencia": "cumple",
+    "documentos": "sin_dato"
+   }
+  }
+ },
+ {
+  "id": "P14",
+  "descripcion": "Mora declarada",
+  "entrada": {
+   "edad": 35,
+   "tipoIngreso": "dependencia",
+   "mesesIngresoEstable": 30,
+   "ingresoMensual": 2000,
+   "gastosEsenciales": 700,
+   "cuotasMensualesActuales": 100,
+   "cuotaNuevaEstimada": 200,
+   "scoreConocido": 700,
+   "moraActual": "si",
+   "estres": {
+    "reduccionIngresoPct": 20,
+    "aumentoCuotasPct": 0
+   },
+   "documentos": null
+  },
+  "esperado": {
+   "nivel": "debil",
+   "ratioCuotasPct": 15.0,
+   "ingresoDisponible": 1000.0,
+   "ratioEstresPct": 18.75,
+   "estados": {
+    "edad": "cumple",
+    "estabilidad": "cumple",
+    "endeudamiento": "cumple",
+    "ingreso_disponible": "cumple",
+    "mora": "no_cumple",
+    "score": "cumple",
+    "resiliencia": "cumple",
+    "documentos": "sin_dato"
+   }
+  }
+ },
+ {
+  "id": "P15",
+  "descripcion": "No sabe si tiene mora",
+  "entrada": {
+   "edad": 35,
+   "tipoIngreso": "dependencia",
+   "mesesIngresoEstable": 30,
+   "ingresoMensual": 2000,
+   "gastosEsenciales": 700,
+   "cuotasMensualesActuales": 100,
+   "cuotaNuevaEstimada": 200,
+   "scoreConocido": 700,
+   "moraActual": "no_se",
+   "estres": {
+    "reduccionIngresoPct": 20,
+    "aumentoCuotasPct": 0
+   },
+   "documentos": null
+  },
+  "esperado": {
+   "nivel": "condicionado",
+   "ratioCuotasPct": 15.0,
+   "ingresoDisponible": 1000.0,
+   "ratioEstresPct": 18.75,
+   "estados": {
+    "edad": "cumple",
+    "estabilidad": "cumple",
+    "endeudamiento": "cumple",
+    "ingreso_disponible": "cumple",
+    "mora": "atencion",
+    "score": "cumple",
+    "resiliencia": "cumple",
+    "documentos": "sin_dato"
+   }
+  }
+ },
+ {
+  "id": "P16",
+  "descripcion": "Score exactamente 650: límite = atención",
+  "entrada": {
+   "edad": 35,
+   "tipoIngreso": "dependencia",
+   "mesesIngresoEstable": 30,
+   "ingresoMensual": 2000,
+   "gastosEsenciales": 700,
+   "cuotasMensualesActuales": 100,
+   "cuotaNuevaEstimada": 200,
+   "scoreConocido": 650,
+   "moraActual": "no",
+   "estres": {
+    "reduccionIngresoPct": 20,
+    "aumentoCuotasPct": 0
+   },
+   "documentos": null
+  },
+  "esperado": {
+   "nivel": "condicionado",
+   "ratioCuotasPct": 15.0,
+   "ingresoDisponible": 1000.0,
+   "ratioEstresPct": 18.75,
+   "estados": {
+    "edad": "cumple",
+    "estabilidad": "cumple",
+    "endeudamiento": "cumple",
+    "ingreso_disponible": "cumple",
+    "mora": "cumple",
+    "score": "atencion",
+    "resiliencia": "cumple",
+    "documentos": "sin_dato"
+   }
+  }
+ },
+ {
+  "id": "P17",
+  "descripcion": "Score 651 (cumple)",
+  "entrada": {
+   "edad": 35,
+   "tipoIngreso": "dependencia",
+   "mesesIngresoEstable": 30,
+   "ingresoMensual": 2000,
+   "gastosEsenciales": 700,
+   "cuotasMensualesActuales": 100,
+   "cuotaNuevaEstimada": 200,
+   "scoreConocido": 651,
+   "moraActual": "no",
+   "estres": {
+    "reduccionIngresoPct": 20,
+    "aumentoCuotasPct": 0
+   },
+   "documentos": null
+  },
+  "esperado": {
+   "nivel": "favorable",
+   "ratioCuotasPct": 15.0,
+   "ingresoDisponible": 1000.0,
+   "ratioEstresPct": 18.75,
+   "estados": {
+    "edad": "cumple",
+    "estabilidad": "cumple",
+    "endeudamiento": "cumple",
+    "ingreso_disponible": "cumple",
+    "mora": "cumple",
+    "score": "cumple",
+    "resiliencia": "cumple",
+    "documentos": "sin_dato"
+   }
+  }
+ },
+ {
+  "id": "P18",
+  "descripcion": "Score exactamente 300 (atención)",
+  "entrada": {
+   "edad": 35,
+   "tipoIngreso": "dependencia",
+   "mesesIngresoEstable": 30,
+   "ingresoMensual": 2000,
+   "gastosEsenciales": 700,
+   "cuotasMensualesActuales": 100,
+   "cuotaNuevaEstimada": 200,
+   "scoreConocido": 300,
+   "moraActual": "no",
+   "estres": {
+    "reduccionIngresoPct": 20,
+    "aumentoCuotasPct": 0
+   },
+   "documentos": null
+  },
+  "esperado": {
+   "nivel": "condicionado",
+   "ratioCuotasPct": 15.0,
+   "ingresoDisponible": 1000.0,
+   "ratioEstresPct": 18.75,
+   "estados": {
+    "edad": "cumple",
+    "estabilidad": "cumple",
+    "endeudamiento": "cumple",
+    "ingreso_disponible": "cumple",
+    "mora": "cumple",
+    "score": "atencion",
+    "resiliencia": "cumple",
+    "documentos": "sin_dato"
+   }
+  }
+ },
+ {
+  "id": "P19",
+  "descripcion": "Score 299 (no cumple)",
+  "entrada": {
+   "edad": 35,
+   "tipoIngreso": "dependencia",
+   "mesesIngresoEstable": 30,
+   "ingresoMensual": 2000,
+   "gastosEsenciales": 700,
+   "cuotasMensualesActuales": 100,
+   "cuotaNuevaEstimada": 200,
+   "scoreConocido": 299,
+   "moraActual": "no",
+   "estres": {
+    "reduccionIngresoPct": 20,
+    "aumentoCuotasPct": 0
+   },
+   "documentos": null
+  },
+  "esperado": {
+   "nivel": "debil",
+   "ratioCuotasPct": 15.0,
+   "ingresoDisponible": 1000.0,
+   "ratioEstresPct": 18.75,
+   "estados": {
+    "edad": "cumple",
+    "estabilidad": "cumple",
+    "endeudamiento": "cumple",
+    "ingreso_disponible": "cumple",
+    "mora": "cumple",
+    "score": "no_cumple",
+    "resiliencia": "cumple",
+    "documentos": "sin_dato"
+   }
+  }
+ },
+ {
+  "id": "P20",
+  "descripcion": "Gastos y cuotas superan el ingreso",
+  "entrada": {
+   "edad": 35,
+   "tipoIngreso": "dependencia",
+   "mesesIngresoEstable": 30,
+   "ingresoMensual": 1000,
+   "gastosEsenciales": 750,
+   "cuotasMensualesActuales": 100,
+   "cuotaNuevaEstimada": 200,
+   "scoreConocido": null,
+   "moraActual": "no",
+   "estres": {
+    "reduccionIngresoPct": 20,
+    "aumentoCuotasPct": 0
+   },
+   "documentos": null
+  },
+  "esperado": {
+   "nivel": "debil",
+   "ratioCuotasPct": 30.0,
+   "ingresoDisponible": -50.0,
+   "ratioEstresPct": 37.5,
+   "estados": {
+    "edad": "cumple",
+    "estabilidad": "cumple",
+    "endeudamiento": "atencion",
+    "ingreso_disponible": "no_cumple",
+    "mora": "cumple",
+    "score": "sin_dato",
+    "resiliencia": "atencion",
+    "documentos": "sin_dato"
+   }
+  }
+ },
+ {
+  "id": "P21",
+  "descripcion": "Ingreso disponible exactamente cero: límite = atención",
+  "entrada": {
+   "edad": 35,
+   "tipoIngreso": "dependencia",
+   "mesesIngresoEstable": 30,
+   "ingresoMensual": 2000,
+   "gastosEsenciales": 1700,
+   "cuotasMensualesActuales": 100,
+   "cuotaNuevaEstimada": 200,
+   "scoreConocido": null,
+   "moraActual": "no",
+   "estres": {
+    "reduccionIngresoPct": 20,
+    "aumentoCuotasPct": 0
+   },
+   "documentos": null
+  },
+  "esperado": {
+   "nivel": "condicionado",
+   "ratioCuotasPct": 15.0,
+   "ingresoDisponible": 0.0,
+   "ratioEstresPct": 18.75,
+   "estados": {
+    "edad": "cumple",
+    "estabilidad": "cumple",
+    "endeudamiento": "cumple",
+    "ingreso_disponible": "atencion",
+    "mora": "cumple",
+    "score": "sin_dato",
+    "resiliencia": "atencion",
+    "documentos": "sin_dato"
+   }
+  }
+ },
+ {
+  "id": "P22",
+  "descripcion": "Estrés: ingreso -20 % lleva las cuotas sobre el máximo (atención)",
+  "entrada": {
+   "edad": 35,
+   "tipoIngreso": "dependencia",
+   "mesesIngresoEstable": 30,
+   "ingresoMensual": 1000,
+   "gastosEsenciales": 300,
+   "cuotasMensualesActuales": 100,
+   "cuotaNuevaEstimada": 150,
+   "scoreConocido": null,
+   "moraActual": "no",
+   "estres": {
+    "reduccionIngresoPct": 20,
+    "aumentoCuotasPct": 0
+   },
+   "documentos": null
+  },
+  "esperado": {
+   "nivel": "condicionado",
+   "ratioCuotasPct": 25.0,
+   "ingresoDisponible": 450.0,
+   "ratioEstresPct": 31.25,
+   "estados": {
+    "edad": "cumple",
+    "estabilidad": "cumple",
+    "endeudamiento": "cumple",
+    "ingreso_disponible": "cumple",
+    "mora": "cumple",
+    "score": "sin_dato",
+    "resiliencia": "atencion",
+    "documentos": "sin_dato"
+   }
+  }
+ },
+ {
+  "id": "P23",
+  "descripcion": "Estrés con cuotas +30 % e ingreso -10 % (resiste)",
+  "entrada": {
+   "edad": 35,
+   "tipoIngreso": "dependencia",
+   "mesesIngresoEstable": 30,
+   "ingresoMensual": 2000,
+   "gastosEsenciales": 500,
+   "cuotasMensualesActuales": 200,
+   "cuotaNuevaEstimada": 200,
+   "scoreConocido": null,
+   "moraActual": "no",
+   "estres": {
+    "reduccionIngresoPct": 10,
+    "aumentoCuotasPct": 30
+   },
+   "documentos": null
+  },
+  "esperado": {
+   "nivel": "favorable",
+   "ratioCuotasPct": 20.0,
+   "ingresoDisponible": 1100.0,
+   "ratioEstresPct": 28.8888888888889,
+   "estados": {
+    "edad": "cumple",
+    "estabilidad": "cumple",
+    "endeudamiento": "cumple",
+    "ingreso_disponible": "cumple",
+    "mora": "cumple",
+    "score": "sin_dato",
+    "resiliencia": "cumple",
+    "documentos": "sin_dato"
+   }
+  }
+ },
+ {
+  "id": "P24",
+  "descripcion": "Estrés del 100 % del ingreso",
+  "entrada": {
+   "edad": 35,
+   "tipoIngreso": "dependencia",
+   "mesesIngresoEstable": 30,
+   "ingresoMensual": 2000,
+   "gastosEsenciales": 500,
+   "cuotasMensualesActuales": 200,
+   "cuotaNuevaEstimada": 200,
+   "scoreConocido": null,
+   "moraActual": "no",
+   "estres": {
+    "reduccionIngresoPct": 100,
+    "aumentoCuotasPct": 0
+   },
+   "documentos": null
+  },
+  "esperado": {
+   "nivel": "condicionado",
+   "ratioCuotasPct": 20.0,
+   "ingresoDisponible": 1100.0,
+   "ratioEstresPct": null,
+   "estados": {
+    "edad": "cumple",
+    "estabilidad": "cumple",
+    "endeudamiento": "cumple",
+    "ingreso_disponible": "cumple",
+    "mora": "cumple",
+    "score": "sin_dato",
+    "resiliencia": "atencion",
+    "documentos": "sin_dato"
+   }
+  }
+ },
+ {
+  "id": "P25",
+  "descripcion": "Documentos incompletos (2 de 3): solo informa, no cambia el nivel",
+  "entrada": {
+   "edad": 35,
+   "tipoIngreso": "dependencia",
+   "mesesIngresoEstable": 30,
+   "ingresoMensual": 1800,
+   "gastosEsenciales": 500,
+   "cuotasMensualesActuales": 100,
+   "cuotaNuevaEstimada": 200,
+   "scoreConocido": null,
+   "moraActual": "no",
+   "estres": {
+    "reduccionIngresoPct": 20,
+    "aumentoCuotasPct": 0
+   },
+   "documentos": {
+    "listos": 2,
+    "total": 3
+   }
+  },
+  "esperado": {
+   "nivel": "favorable",
+   "ratioCuotasPct": 16.6666666666667,
+   "ingresoDisponible": 1000.0,
+   "ratioEstresPct": 20.8333333333333,
+   "estados": {
+    "edad": "cumple",
+    "estabilidad": "cumple",
+    "endeudamiento": "cumple",
+    "ingreso_disponible": "cumple",
+    "mora": "cumple",
+    "score": "sin_dato",
+    "resiliencia": "cumple",
+    "documentos": "atencion"
+   }
+  }
+ },
+ {
+  "id": "P26",
+  "descripcion": "Documentos completos (3 de 3)",
+  "entrada": {
+   "edad": 35,
+   "tipoIngreso": "dependencia",
+   "mesesIngresoEstable": 30,
+   "ingresoMensual": 1800,
+   "gastosEsenciales": 500,
+   "cuotasMensualesActuales": 100,
+   "cuotaNuevaEstimada": 200,
+   "scoreConocido": null,
+   "moraActual": "no",
+   "estres": {
+    "reduccionIngresoPct": 20,
+    "aumentoCuotasPct": 0
+   },
+   "documentos": {
+    "listos": 3,
+    "total": 3
+   }
+  },
+  "esperado": {
+   "nivel": "favorable",
+   "ratioCuotasPct": 16.6666666666667,
+   "ingresoDisponible": 1000.0,
+   "ratioEstresPct": 20.8333333333333,
+   "estados": {
+    "edad": "cumple",
+    "estabilidad": "cumple",
+    "endeudamiento": "cumple",
+    "ingreso_disponible": "cumple",
+    "mora": "cumple",
+    "score": "sin_dato",
+    "resiliencia": "cumple",
+    "documentos": "cumple"
+   }
+  }
+ },
+ {
+  "id": "P27",
+  "descripcion": "Sin gastos declarados",
+  "entrada": {
+   "edad": 35,
+   "tipoIngreso": "dependencia",
+   "mesesIngresoEstable": 30,
+   "ingresoMensual": 1800,
+   "gastosEsenciales": null,
+   "cuotasMensualesActuales": 100,
+   "cuotaNuevaEstimada": 200,
+   "scoreConocido": 680,
+   "moraActual": "no",
+   "estres": {
+    "reduccionIngresoPct": 20,
+    "aumentoCuotasPct": 0
+   },
+   "documentos": null
+  },
+  "esperado": {
+   "nivel": "favorable",
+   "ratioCuotasPct": 16.6666666666667,
+   "ingresoDisponible": null,
+   "ratioEstresPct": 20.8333333333333,
+   "estados": {}
+  }
+ },
+ {
+  "id": "P28",
+  "descripcion": "Ingreso cero (datos insuficientes)",
+  "entrada": {
+   "edad": 35,
+   "tipoIngreso": "dependencia",
+   "mesesIngresoEstable": 30,
+   "ingresoMensual": 0,
+   "gastosEsenciales": 100,
+   "cuotasMensualesActuales": 0,
+   "cuotaNuevaEstimada": 100,
+   "scoreConocido": null,
+   "moraActual": "no",
+   "estres": {
+    "reduccionIngresoPct": 20,
+    "aumentoCuotasPct": 0
+   },
+   "documentos": null
+  },
+  "esperado": {
+   "nivel": "insuficiente",
+   "ratioCuotasPct": null,
+   "ingresoDisponible": null,
+   "ratioEstresPct": null,
+   "estados": {}
+  }
+ },
+ {
+  "id": "P29",
+  "descripcion": "Score fuera de rango (1000)",
+  "entrada": {
+   "edad": 35,
+   "tipoIngreso": "dependencia",
+   "mesesIngresoEstable": 30,
+   "ingresoMensual": 1800,
+   "gastosEsenciales": 500,
+   "cuotasMensualesActuales": 100,
+   "cuotaNuevaEstimada": 200,
+   "scoreConocido": 1000,
+   "moraActual": "no",
+   "estres": {
+    "reduccionIngresoPct": 20,
+    "aumentoCuotasPct": 0
+   },
+   "documentos": null
+  },
+  "esperado": {
+   "nivel": "insuficiente",
+   "ratioCuotasPct": null,
+   "ingresoDisponible": null,
+   "ratioEstresPct": null,
+   "estados": {}
+  }
+ },
+ {
+  "id": "P30",
+  "descripcion": "Independiente, perfil débil por varios criterios",
+  "entrada": {
+   "edad": 22,
+   "tipoIngreso": "independiente",
+   "mesesIngresoEstable": 1,
+   "ingresoMensual": 600,
+   "gastosEsenciales": 500,
+   "cuotasMensualesActuales": 150,
+   "cuotaNuevaEstimada": 200,
+   "scoreConocido": 250,
+   "moraActual": "si",
+   "estres": {
+    "reduccionIngresoPct": 20,
+    "aumentoCuotasPct": 0
+   },
+   "documentos": null
+  },
+  "esperado": {
+   "nivel": "debil",
+   "ratioCuotasPct": 58.3333333333333,
+   "ingresoDisponible": -250.0,
+   "ratioEstresPct": 72.9166666666667,
+   "estados": {
+    "edad": "cumple",
+    "estabilidad": "atencion",
+    "endeudamiento": "no_cumple",
+    "ingreso_disponible": "no_cumple",
+    "mora": "no_cumple",
+    "score": "no_cumple",
+    "resiliencia": "atencion",
+    "documentos": "sin_dato"
+   }
+  }
+ }
+]

@@ -1,0 +1,113 @@
+{
+  "version": 2,
+  "registros": [
+    {
+      "id": "mayor-de-edad",
+      "item": "Ser mayor de 18 años",
+      "descripcion": "Requisito de ejemplo de una entidad pública de crédito de consumo.",
+      "donde_obtenerlo": null,
+      "url": "https://www.eluniverso.com/noticias/ecuador/como-sacar-un-credito-de-consumo-en-banecuador-nota/",
+      "peso_referencial": null,
+      "es_ejemplo_de_entidad": true,
+      "traza": {
+        "fuente_nombre": "El Universo: crédito de consumo en BanEcuador",
+        "fuente_url": "https://www.eluniverso.com/noticias/ecuador/como-sacar-un-credito-de-consumo-en-banecuador-nota/",
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "hecho",
+        "confianza": "media",
+        "desactualizado": false
+      }
+    },
+    {
+      "id": "cedula",
+      "item": "Cédula de identidad vigente",
+      "descripcion": "Documento de identidad pedido por la entidad de ejemplo.",
+      "donde_obtenerlo": null,
+      "url": "https://www.eluniverso.com/noticias/ecuador/como-sacar-un-credito-de-consumo-en-banecuador-nota/",
+      "peso_referencial": null,
+      "es_ejemplo_de_entidad": true,
+      "traza": {
+        "fuente_nombre": "El Universo: crédito de consumo en BanEcuador",
+        "fuente_url": "https://www.eluniverso.com/noticias/ecuador/como-sacar-un-credito-de-consumo-en-banecuador-nota/",
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "hecho",
+        "confianza": "media",
+        "desactualizado": false
+      }
+    },
+    {
+      "id": "ingresos-comprobables",
+      "item": "Ingresos comprobables y estables",
+      "descripcion": "En el ejemplo de BanEcuador: al menos 6 meses en relación de dependencia o ingresos comprobables de los últimos 3 meses si eres independiente.",
+      "donde_obtenerlo": "Certificado de ingresos",
+      "url": "https://www.eluniverso.com/noticias/ecuador/como-sacar-un-credito-de-consumo-en-banecuador-nota/",
+      "peso_referencial": null,
+      "es_ejemplo_de_entidad": true,
+      "traza": {
+        "fuente_nombre": "El Universo: crédito de consumo en BanEcuador",
+        "fuente_url": "https://www.eluniverso.com/noticias/ecuador/como-sacar-un-credito-de-consumo-en-banecuador-nota/",
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "hecho",
+        "confianza": "media",
+        "desactualizado": false
+      }
+    },
+    {
+      "id": "historial-sin-mora",
+      "item": "Historial crediticio sin mora",
+      "descripcion": "Las entidades revisan tu historial y score; el score es solo una de las variables.",
+      "donde_obtenerlo": "Reporte de Datos Crediticios",
+      "url": "https://www.gob.ec/sb/tramites/atencion-registro-datos-crediticios-rdc",
+      "peso_referencial": null,
+      "es_ejemplo_de_entidad": false,
+      "traza": {
+        "fuente_nombre": "Primicias: el score es una variable más",
+        "fuente_url": "https://primicias.ec/noticias/economia/credito-score-buro-precios-reporte",
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "hecho",
+        "confianza": "media",
+        "desactualizado": true
+      }
+    },
+    {
+      "id": "capacidad-de-pago",
+      "item": "Capacidad de pago",
+      "descripcion": "Las entidades analizan ingresos, estabilidad laboral y nivel de endeudamiento actual; aunque tengas buen score, si gran parte de tu ingreso ya está comprometido en cuotas pueden negar el crédito o aprobar un monto menor.",
+      "donde_obtenerlo": null,
+      "url": "https://kchcomunicacion.com/?p=321363",
+      "peso_referencial": null,
+      "es_ejemplo_de_entidad": false,
+      "traza": {
+        "fuente_nombre": "Nota de prensa sobre lo que ven los bancos",
+        "fuente_url": "https://kchcomunicacion.com/?p=321363",
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "hecho",
+        "confianza": "media",
+        "desactualizado": false
+      }
+    },
+    {
+      "id": "respaldos-ingresos",
+      "item": "Respaldos de ingresos y movimientos",
+      "descripcion": "Ejemplo de entidad: Produbanco pide respaldos de ingresos, movimientos, documentos laborales o tributarios según la actividad.",
+      "donde_obtenerlo": "Tu empleador, tu banco o el SRI según el caso",
+      "url": "https://www.produbanco.com.ec/banca-personas/creditos/credito-en-linea/",
+      "peso_referencial": null,
+      "es_ejemplo_de_entidad": true,
+      "traza": {
+        "fuente_nombre": "Sitio de Produbanco, según investigación aportada",
+        "fuente_url": "https://www.produbanco.com.ec/banca-personas/creditos/credito-en-linea/",
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "hecho",
+        "confianza": "media",
+        "desactualizado": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,210 @@
+{
+  "version": 2,
+  "registros": [
+    {
+      "id": "sb-reporte-crediticio",
+      "servicio": "Reporte de Datos Crediticios (con score)",
+      "entidad": "Superintendencia de Bancos",
+      "que_muestra": "Tus operaciones crediticias vigentes, vencidas o canceladas y tu puntaje, a partir de lo que reportan las entidades.",
+      "quien_puede_consultar": "El titular (persona natural o jurídica) o quien él autorice.",
+      "requisitos": [
+        "Cédula, pasaporte o RUC",
+        "Correo electrónico",
+        "Selfie y PDF de la cédula para activar el registro en línea (con RUC o pasaporte la activación es presencial)",
+        "La activación puede tardar hasta 48 horas hábiles"
+      ],
+      "costo": "Gratuito. Fideval indica que es al menos una vez al año; confirma la frecuencia vigente en el portal.",
+      "pasos": [
+        "Ingresa al portal de la Superintendencia de Bancos, Registro de Datos Crediticios.",
+        "Regístrate con tu documento y verifica tu correo.",
+        "Sube la selfie y el PDF de tu cédula para activar la cuenta.",
+        "Ingresa, abre Reporte de datos crediticios y genera el PDF."
+      ],
+      "url": "https://www.superbancos.gob.ec/bancos/registro-de-datos-crediticios/",
+      "exige_login": true,
+      "traza": {
+        "fuente_nombre": "Ficha oficial en gob.ec",
+        "fuente_url": "https://www.gob.ec/sb/tramites/atencion-registro-datos-crediticios-rdc",
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "hecho",
+        "confianza": "alta",
+        "desactualizado": false
+      }
+    },
+    {
+      "id": "equifax-mis-creditos",
+      "servicio": "Reporte de buró de crédito (Equifax, Mis Créditos)",
+      "entidad": "Equifax Ecuador",
+      "que_muestra": "Reporte y score del titular, con servicios adicionales de análisis y seguimiento.",
+      "quien_puede_consultar": "El titular.",
+      "requisitos": [
+        "Verifica los requisitos vigentes en el sitio oficial"
+      ],
+      "costo": "Informe desde USD 9,61 más IVA según la oferta consultada; confirma el precio vigente.",
+      "pasos": [],
+      "url": "https://www.equifax.com.ec/miscreditos",
+      "exige_login": null,
+      "traza": {
+        "fuente_nombre": "Investigación aportada, sec. 2.2 (no pude abrir la página)",
+        "fuente_url": "https://www.equifax.com.ec/miscreditos",
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "hecho",
+        "confianza": "media",
+        "desactualizado": false
+      }
+    },
+    {
+      "id": "aval-buro-ciudadanos",
+      "servicio": "Reporte de buró de crédito (Aval Buró)",
+      "entidad": "Aval Buró",
+      "que_muestra": "Reporte y score del titular.",
+      "quien_puede_consultar": "El titular.",
+      "requisitos": [
+        "Verifica los requisitos vigentes en el sitio oficial"
+      ],
+      "costo": null,
+      "pasos": [],
+      "url": "https://www.avalburo.com/ciudadanos/",
+      "exige_login": null,
+      "traza": {
+        "fuente_nombre": "Fideval y la investigación aportada: sin tarifario verificable",
+        "fuente_url": "https://avalburo.tusfinanzas.ec/credito/",
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "hecho",
+        "confianza": "baja",
+        "desactualizado": true
+      }
+    },
+    {
+      "id": "redclic-panorama",
+      "servicio": "Consulta de buró (RedClic, Panorama)",
+      "entidad": "RedClic",
+      "que_muestra": "Consulta digital del titular.",
+      "quien_puede_consultar": "El titular.",
+      "requisitos": [
+        "Verifica los requisitos vigentes en el sitio oficial",
+        "Confirma con la Superintendencia de Bancos que la autorización siga vigente"
+      ],
+      "costo": "Panorama: USD 10 más IVA según su página comercial.",
+      "pasos": [],
+      "url": "https://redclic.ec/buro-personas/",
+      "exige_login": null,
+      "traza": {
+        "fuente_nombre": "Investigación aportada, sec. 2.2",
+        "fuente_url": "https://redclic.ec/buro-personas/",
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "hecho",
+        "confianza": "media",
+        "desactualizado": false
+      }
+    },
+    {
+      "id": "sri-deudas",
+      "servicio": "Consulta de deudas firmes, impugnadas y en facilidades de pago",
+      "entidad": "Servicio de Rentas Internas",
+      "que_muestra": "Si el contribuyente mantiene deudas firmes, impugnadas o en facilidades de pago con el SRI.",
+      "quien_puede_consultar": "La consulta permite buscar por cédula, RUC, nombres o razón social.",
+      "requisitos": [
+        "Cédula o RUC (o nombres o razón social)"
+      ],
+      "costo": "Gratuito",
+      "pasos": [
+        "Ingresa a SRI en línea.",
+        "En el menú de la izquierda elige Deudas.",
+        "Abre Consulta contribuyentes con obligaciones firmes, impugnadas y en facilidades de pago.",
+        "Ingresa tu cédula o RUC y consulta."
+      ],
+      "url": "https://srienlinea.sri.gob.ec",
+      "exige_login": false,
+      "traza": {
+        "fuente_nombre": "El Universo: cómo consultar las deudas con el SRI",
+        "fuente_url": "https://www.eluniverso.com/noticias/economia/como-consultar-las-deudas-que-mantengo-con-el-sri-nota/",
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "hecho",
+        "confianza": "media",
+        "desactualizado": false
+      }
+    },
+    {
+      "id": "sri-certificado-cumplimiento",
+      "servicio": "Certificado de cumplimiento tributario",
+      "entidad": "Servicio de Rentas Internas",
+      "que_muestra": "Hasta qué periodo se cumplió con las obligaciones tributarias y si hay deudas en firme.",
+      "quien_puede_consultar": "El contribuyente.",
+      "requisitos": [
+        "RUC o cédula"
+      ],
+      "costo": null,
+      "pasos": [],
+      "url": "https://www.sri.gob.ec/servicios-automaticos",
+      "exige_login": null,
+      "traza": {
+        "fuente_nombre": "Ejemplo de certificado de cumplimiento tributario",
+        "fuente_url": "https://atenea.epn.edu.ec/bitstream/25000/1423/1/Certificado_Cumplimiento_Tributario.pdf",
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "hecho",
+        "confianza": "baja",
+        "desactualizado": false
+      }
+    },
+    {
+      "id": "iess-obligaciones-patronales",
+      "servicio": "Certificado de obligaciones patronales",
+      "entidad": "Instituto Ecuatoriano de Seguridad Social",
+      "que_muestra": "Si el empleador registra obligaciones patronales en mora. El certificado tiene validez de 30 días.",
+      "quien_puede_consultar": "El empleador.",
+      "requisitos": [
+        "RUC o cédula del empleador"
+      ],
+      "costo": null,
+      "pasos": [
+        "Ingresa al portal web del IESS.",
+        "Abre el menú Empleador, Certificado de Obligaciones Patronales.",
+        "Digita el RUC de la empresa o tu cédula."
+      ],
+      "url": "https://www.iess.gob.ec/empleador-web/pages/morapatronal/certificadoCumplimientoPublico.jsf",
+      "exige_login": true,
+      "traza": {
+        "fuente_nombre": "Ejemplo de certificado IESS",
+        "fuente_url": "https://www.quito-turismo.gob.ec/descargas/LOTAIP%202023/RENCICION%20DE%20CUENTAS%202022/certificado_empresa_LABORAL%20Y%20TRIBUTARIO.pdf",
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "hecho",
+        "confianza": "media",
+        "desactualizado": false
+      }
+    },
+    {
+      "id": "supercias-consulta-companias",
+      "servicio": "Consulta de compañías y estados financieros",
+      "entidad": "Superintendencia de Compañías, Valores y Seguros",
+      "que_muestra": "Datos generales de la compañía, accionistas, administradores, actos jurídicos y estados financieros presentados.",
+      "quien_puede_consultar": "Cualquier persona puede buscar por expediente, identificación o nombre.",
+      "requisitos": [
+        "Nombre, RUC o número de expediente"
+      ],
+      "costo": null,
+      "pasos": [
+        "Ingresa al portal de información de la Superintendencia de Compañías.",
+        "Busca por expediente, identificación o nombre."
+      ],
+      "url": "https://appscvsgen.supercias.gob.ec/consultaCompanias/societario/estadosFinancierosPorRamo.jsf",
+      "exige_login": false,
+      "traza": {
+        "fuente_nombre": "Guía de consulta de compañías y Derecho Ecuador",
+        "fuente_url": "https://derechoecuador.com/certificados-por-la-superintendencia-de-companias/",
+        "fecha_publicacion": null,
+        "fecha_consulta": "2026-11-05",
+        "tipo": "hecho",
+        "confianza": "media",
+        "desactualizado": false
+      }
+    }
+  ]
+}

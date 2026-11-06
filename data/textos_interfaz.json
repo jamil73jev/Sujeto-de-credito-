@@ -1,0 +1,143 @@
+{
+  "version": 3,
+  "titulo": "¿Dónde estás antes de pedir un crédito?",
+  "subtitulo": "Gratis y sin registro. Tus datos no salen de tu navegador.",
+  "descargo": "Esta herramienta proporciona estimaciones financieras orientativas a partir de los datos ingresados voluntariamente y de información pública. No constituye un reporte oficial de información crediticia, una calificación emitida por un buró ni una aprobación, preaprobación u oferta vinculante de financiamiento. La decisión crediticia corresponde exclusivamente a cada entidad financiera y puede depender de información y políticas no disponibles en esta plataforma.",
+  "privacidad": "Los datos que ingrese para efectuar simulaciones se procesan localmente en su navegador y no se almacenan en nuestros servidores. No consultamos su historial crediticio ni información reservada. Los datos públicos utilizados para comparaciones se identifican con su fuente y fecha de actualización.",
+  "resultados": {
+    "favorable": {
+      "titulo": "Favorable",
+      "texto": "Frente a criterios típicos. No es una aprobación."
+    },
+    "condicionado": {
+      "titulo": "Condicionado",
+      "texto": "Cumples parte de los criterios; hay puntos por revisar."
+    },
+    "debil": {
+      "titulo": "Débil",
+      "texto": "Varios criterios típicos no se cumplen."
+    },
+    "insuficiente": {
+      "titulo": "Faltan datos",
+      "texto": "Completa los campos marcados para ver el resultado."
+    }
+  },
+  "errores": {
+    "campo_requerido": "Completa este campo.",
+    "numero_invalido": "Ingresa un número válido.",
+    "balance_no_cuadra": "El balance no cuadra: el activo total debería ser aproximadamente igual al pasivo más el patrimonio."
+  },
+  "faq": [
+    {
+      "pregunta": "¿El buró de crédito aprueba o niega mi crédito?",
+      "respuesta": "No. El buró recopila información y calcula un score; la decisión la toma cada entidad, que considera el score junto con otras variables."
+    },
+    {
+      "pregunta": "¿Este sitio me da un score?",
+      "respuesta": "No. Los scores los calculan los burós con modelos propios que no son públicos. Este sitio muestra un diagnóstico orientativo en cuatro dimensiones (capacidad de pago, historial, resiliencia y documentos) y no usa una escala parecida a la de un buró."
+    },
+    {
+      "pregunta": "¿Puedo consultar el historial crediticio de otra persona?",
+      "respuesta": "No con este sitio. El Registro de Datos Crediticios solo entrega la información al titular y a quien él autorice."
+    },
+    {
+      "pregunta": "¿Se puede \"limpiar\" el historial en el buró?",
+      "respuesta": "No. Desconfía de quien lo ofrezca. La información solo se corrige si la entidad que reportó cometió un error, y esa rectificación la hace la propia entidad."
+    },
+    {
+      "pregunta": "¿Qué significa el score?",
+      "respuesta": "Es un puntaje, generalmente de 1 a 999, que estima el riesgo de que una persona se atrase en sus pagos. Un puntaje más alto indica menor riesgo. Cada buró usa su propio modelo."
+    },
+    {
+      "pregunta": "¿Cuánto tiempo aparece una deuda en mi reporte?",
+      "respuesta": "Desde la resolución del 20 de agosto de 2026, los reportes incluyen solo operaciones de los últimos dos años (antes eran tres), y la información se conserva hasta cuatro años desde que la deuda se extingue legalmente. La implementación es escalonada: SEPS 12 meses y Superintendencia de Bancos y de Compañías 18 meses. Algunas páginas anteriores hablan de 36 meses; corresponden a la norma previa."
+    },
+    {
+      "pregunta": "¿Cuánto cuesta un reporte de mi historial?",
+      "respuesta": "El de la Superintendencia de Bancos es gratuito. Los burós privados cobran por informes ampliados: por ejemplo, una oferta de Equifax desde USD 9,61 más IVA y una de RedClic de USD 10 más IVA. Verifica el precio vigente en cada sitio."
+    },
+    {
+      "pregunta": "¿Qué diferencia hay entre tasa máxima y tasa referencial?",
+      "respuesta": "La máxima es el límite regulatorio para cada segmento. La referencial es una estadística de las operaciones otorgadas. Ninguna es una oferta personalizada ni incluye todos los costos de contratar un producto."
+    },
+    {
+      "pregunta": "¿Las deudas con cooperativas y casas comerciales afectan mi historial?",
+      "respuesta": "Sí. Las cooperativas reportan igual que los bancos, y la reforma de 2026 amplía las fuentes a comercio, seguros y telecomunicaciones. Que una fuente esté obligada no significa que todas sus cuentas ya estén integradas."
+    },
+    {
+      "pregunta": "¿Dónde influye mi historial además de los créditos?",
+      "respuesta": "Según Fideval, también puede influir en procesos de contratación de algunas empresas, contratos de arrendamiento y planes de telefonía o televisión."
+    },
+    {
+      "pregunta": "¿Este sitio guarda mis datos?",
+      "respuesta": "No. Todo se calcula en tu navegador y no se envía a ningún servidor."
+    }
+  ],
+  "glosario": [
+    {
+      "termino": "Score",
+      "definicion": "Puntaje que estima la probabilidad de pago de una persona, calculado por un buró con su propio modelo."
+    },
+    {
+      "termino": "Buró de crédito",
+      "definicion": "Empresa autorizada que recopila información crediticia y la entrega a entidades y al titular."
+    },
+    {
+      "termino": "Registro de Datos Crediticios",
+      "definicion": "Sistema a cargo de la Superintendencia de Bancos con la información crediticia de personas y empresas."
+    },
+    {
+      "termino": "Morosidad",
+      "definicion": "Proporción de la cartera de créditos que no se paga a tiempo."
+    },
+    {
+      "termino": "Tasa efectiva anual (TEA)",
+      "definicion": "Costo anual del crédito expresado como porcentaje, considerando la capitalización de intereses."
+    },
+    {
+      "termino": "Capacidad de pago",
+      "definicion": "Posibilidad de pagar las cuotas con los ingresos disponibles, después de otras obligaciones."
+    },
+    {
+      "termino": "Sujeto de crédito",
+      "definicion": "Persona o empresa que una entidad considera apta para recibir un crédito."
+    },
+    {
+      "termino": "Cartera",
+      "definicion": "Conjunto de créditos otorgados por una entidad."
+    },
+    {
+      "termino": "Segmento de crédito",
+      "definicion": "Clasificación del crédito por destino, como consumo, productivo, microcrédito o educativo."
+    },
+    {
+      "termino": "Cuota",
+      "definicion": "Pago periódico que combina capital e intereses."
+    },
+    {
+      "termino": "Tasa máxima",
+      "definicion": "Límite regulatorio de la tasa de interés efectiva anual para un segmento de crédito."
+    },
+    {
+      "termino": "Tasa referencial",
+      "definicion": "Estadística de las tasas de las operaciones otorgadas en un segmento. No es una oferta."
+    },
+    {
+      "termino": "Calificación A1 a E",
+      "definicion": "Categorías prudenciales con las que cada entidad clasifica su cartera. No es tu score ni este diagnóstico."
+    },
+    {
+      "termino": "CIIU",
+      "definicion": "Clasificación Industrial Internacional Uniforme: el código de tu actividad económica, que aparece en el RUC."
+    },
+    {
+      "termino": "DSCR",
+      "definicion": "Cobertura del servicio de la deuda: flujo disponible dividido entre capital e intereses a pagar."
+    },
+    {
+      "termino": "Prueba de estrés",
+      "definicion": "Simulación de qué pasaría con tu capacidad de pago si baja tu ingreso o suben tus cuotas."
+    }
+  ],
+  "descargo_corto": "Estimación orientativa: no es un score, un reporte de buró ni una aprobación de crédito."
+}

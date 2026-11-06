@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Informe de diagnóstico</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<style>
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,'SF Pro Display','SF Pro Text','Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;color:#0a1633;background-color:#f2f6ff;background-image:radial-gradient(50% 380px at 12% 0%,rgba(37,99,235,.10),transparent 70%),radial-gradient(45% 380px at 92% 0%,rgba(182,242,58,.24),transparent 70%);background-repeat:no-repeat;font-variant-numeric:tabular-nums;-webkit-font-smoothing:antialiased}
+*{box-sizing:border-box}
+p{margin:0}
+h1,h2,h3{margin:0;font-weight:600}
+.cont{max-width:1160px;margin:0 auto;padding:0 28px}
+.gris{color:#55607a}
+.fase{font-size:12px;font-weight:600;color:#1e40af;background:#e4edff;border-radius:999px;padding:3px 10px;white-space:nowrap}
+.nota{background:#fff;border-radius:24px;padding:24px;display:flex;flex-direction:column;gap:6px;font-size:15px;line-height:1.5}
+.hoja{background:#fff;border-radius:6px;box-shadow:0 2px 28px rgba(0,0,0,.10);padding:44px 48px;display:flex;flex-direction:column;gap:22px;font-size:13.5px;line-height:1.5;flex:0 1 560px;min-width:320px;min-height:790px}
+.sec{font-size:15px;font-weight:600;letter-spacing:-0.01em;margin:0}
+.fila{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-top:1px solid #e6ecf8}
+.est{font-size:12px;font-weight:600;border-radius:999px;padding:3px 10px;background:#e6ecf8;color:#34405c;white-space:nowrap}
+</style>
+</helmet>
+
+<div class="cont" style="padding-top:64px;padding-bottom:88px;display:flex;flex-direction:column;gap:40px">
+
+<header style="display:flex;flex-direction:column;gap:12px">
+<h1 style="font-size:clamp(40px,6vw,64px);line-height:1.05;letter-spacing:-0.045em">Informe de <span style="background:linear-gradient(180deg,transparent 62%,#b6f23a 62%,#b6f23a 92%,transparent 92%);padding:0 .05em">diagnóstico</span></h1>
+<p class="gris" style="font-size:22px;line-height:1.4;letter-spacing:-0.01em;max-width:700px">Se arma en el navegador al pulsar Generar informe en Personas o Empresas. Vista para imprimir o guardar como PDF, en dos hojas A4. <span class="fase">Nuevo · Fase 2</span></p>
+</header>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px">
+<div class="nota"><strong style="font-weight:600;font-size:17px">Sin servidor</strong><p class="gris">El informe usa lo que ya está en pantalla. No se hace ninguna petición de red con los datos, y una prueba automática lo comprueba.</p></div>
+<div class="nota"><strong style="font-weight:600;font-size:17px">Nombre opcional</strong><p class="gris">El usuario puede escribir un nombre para el encabezado. No se guarda y desaparece al cerrar la vista. [Decisión pendiente tuya.]</p></div>
+<div class="nota"><strong style="font-weight:600;font-size:17px">Aviso al imprimir</strong><p class="gris">Antes de imprimir se avisa que el documento contiene datos personales o de la empresa y conviene cuidarlo.</p></div>
+</div>
+
+<div style="display:flex;gap:32px;align-items:flex-start;flex-wrap:wrap;justify-content:center">
+
+<div class="hoja">
+<div style="display:flex;justify-content:space-between;gap:12px;align-items:flex-start;border-bottom:2px solid #1d4ed8;padding-bottom:14px">
+<div><strong style="font-size:18px;font-weight:600;letter-spacing:-0.02em">Diagnóstico orientativo de elegibilidad</strong><p class="gris" style="font-size:12.5px;margin-top:2px">[Persona o Empresa] · [Nombre opcional]</p></div>
+<div class="gris" style="text-align:right;font-size:12px"><div>Folio: [FOLIO]</div><div>Fecha: [fecha]</div><div>Metodología: [v1.0]</div></div>
+</div>
+
+<div>
+<h3 class="sec">Resultado general</h3>
+<div aria-hidden="true" style="margin-top:12px;position:relative;padding-top:4px">
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:4px;height:8px"><span style="background:#e5484d;border-radius:999px"></span><span style="background:#f5a524;border-radius:999px"></span><span style="background:#30a46c;border-radius:999px"></span></div>
+<div style="position:absolute;left:calc(50% - 9px);top:-2px;width:18px;height:18px;border-radius:50%;background:#fff;box-shadow:0 1px 5px rgba(0,0,0,.4)"></div>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);font-size:11.5px;color:#55607a;margin-top:10px"><span>Débil</span><span style="text-align:center">Condicionado</span><span style="text-align:right">Favorable</span></div>
+</div>
+<p style="margin-top:10px"><strong style="font-weight:600">[Nivel]</strong>. [Frase corta de lectura.]</p>
+</div>
+
+<div>
+<h3 class="sec">Resultado por dimensión</h3>
+<div class="fila" style="margin-top:8px"><span>[Dimensión 1]</span><span class="est">[estado]</span></div>
+<div class="fila"><span>[Dimensión 2]</span><span class="est">[estado]</span></div>
+<div class="fila"><span>[Dimensión 3]</span><span class="est">[estado]</span></div>
+<div class="fila"><span>[Dimensión 4]</span><span class="est">[estado]</span></div>
+<div class="fila"><span>[Dimensión 5, solo personas]</span><span class="est">[estado]</span></div>
+</div>
+
+<div>
+<h3 class="sec">Datos declarados</h3>
+<div class="fila" style="margin-top:8px"><span>[Campo]</span><span>[valor]</span></div>
+<div class="fila"><span>[Campo]</span><span>[valor]</span></div>
+<div class="fila"><span>[Campo]</span><span>[valor]</span></div>
+<p class="gris" style="font-size:12px;margin-top:6px">Datos escritos por el usuario; no fueron verificados.</p>
+</div>
+
+<div class="gris" style="margin-top:auto;font-size:11.5px;display:flex;justify-content:space-between;border-top:1px solid #e6ecf8;padding-top:10px"><span>Folio [FOLIO]</span><span>Hoja 1 de 2</span></div>
+</div>
+
+<div class="hoja">
+<div>
+<h3 class="sec">Escenarios</h3>
+<div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:10px;font-size:12.5px">
+<div style="background:#f2f6ff;border-radius:14px;padding:12px"><strong style="font-weight:600">Base</strong><p class="gris">[supuesto]</p><span class="est" style="display:inline-block;margin-top:6px;background:#fff">[nivel]</span></div>
+<div style="background:#f2f6ff;border-radius:14px;padding:12px"><strong style="font-weight:600">Moderado</strong><p class="gris">[supuesto]</p><span class="est" style="display:inline-block;margin-top:6px;background:#fff">[nivel]</span></div>
+<div style="background:#f2f6ff;border-radius:14px;padding:12px"><strong style="font-weight:600">Severo</strong><p class="gris">[supuesto]</p><span class="est" style="display:inline-block;margin-top:6px;background:#fff">[nivel]</span></div>
+</div>
+</div>
+
+<div>
+<h3 class="sec">Recomendaciones, de mayor a menor prioridad</h3>
+<ol style="margin:8px 0 0;padding-left:20px"><li>[Recomendación 1 y qué la sustenta]</li><li>[Recomendación 2]</li><li>[Recomendación 3]</li></ol>
+</div>
+
+<div>
+<h3 class="sec">Documentos que llevar a la entidad</h3>
+<ul style="margin:8px 0 0;padding-left:20px"><li>[Documento 1]</li><li>[Documento 2]</li><li>[Documento 3]</li></ul>
+</div>
+
+<div>
+<h3 class="sec">Fuentes y supuestos</h3>
+<div class="fila" style="margin-top:8px"><span>[Fuente o supuesto]</span><span class="gris">[fecha · confianza]</span></div>
+<div class="fila"><span>[Fuente o supuesto]</span><span class="gris">[fecha · confianza]</span></div>
+</div>
+
+<div style="background:#f2f6ff;border-radius:14px;padding:12px 14px;font-size:12px;line-height:1.5"><strong style="font-weight:600">Aviso.</strong> Este documento es orientativo. No es un score, una calificación oficial, una oferta ni una preaprobación, y no sustituye a una entidad financiera.</div>
+
+<div class="gris" style="margin-top:auto;font-size:11.5px;display:flex;justify-content:space-between;border-top:1px solid #e6ecf8;padding-top:10px"><span>Folio [FOLIO]</span><span>Hoja 2 de 2</span></div>
+</div>
+
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":1500}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

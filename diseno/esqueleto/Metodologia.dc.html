@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Metodología y fuentes</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<style>
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,'SF Pro Display','SF Pro Text','Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;color:#0a1633;background-color:#fff;background-image:radial-gradient(50% 380px at 12% 0%,rgba(37,99,235,.10),transparent 70%),radial-gradient(45% 380px at 92% 0%,rgba(182,242,58,.24),transparent 70%);background-repeat:no-repeat;font-variant-numeric:tabular-nums;-webkit-font-smoothing:antialiased}
+*{box-sizing:border-box}
+p{margin:0}
+h1,h2,h3{margin:0;font-weight:600}
+.cont{max-width:1160px;margin:0 auto;padding:0 28px}
+.gris{color:#55607a}
+.card{background:#f2f6ff;border-radius:28px;padding:32px;display:flex;flex-direction:column;gap:18px}
+.fase{font-size:12px;font-weight:600;color:#1e40af;background:#e4edff;border-radius:999px;padding:3px 10px;white-space:nowrap}
+.hoy{font-size:12px;font-weight:600;border-radius:999px;padding:3px 10px;white-space:nowrap;background:#e6ecf8;color:#34405c}
+.fila{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-top:1px solid #e0e7f5;font-size:15px;line-height:1.45}
+.est{font-size:12.5px;font-weight:600;border-radius:999px;padding:3px 10px;background:#fff;color:#34405c;white-space:nowrap}
+.tabla{width:100%;border-collapse:collapse;font-size:14px}
+.tabla th{text-align:left;font-size:12.5px;font-weight:600;color:#55607a;padding:10px 12px;border-bottom:1px solid #d5ddef}
+.tabla td{padding:12px;border-bottom:1px solid #e0e7f5;vertical-align:top;color:#34405c}
+.regla{background:#fff;border-radius:20px;padding:20px;display:flex;flex-direction:column;gap:4px;font-size:15px;line-height:1.45}
+.ind{background:#fff;border-radius:20px;padding:18px 22px}
+.ind summary{cursor:pointer;font-weight:600;font-size:16px}
+</style>
+</helmet>
+
+<nav aria-label="Principal" style="background:#fff;border-bottom:1px solid #e6ecf8">
+<div class="cont" style="display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;min-height:52px;padding-top:6px;padding-bottom:6px">
+<strong style="font-size:17px;font-weight:600">¿Soy sujeto de crédito?</strong>
+<div style="display:flex;gap:28px;font-size:14px;color:#34405c;flex-wrap:wrap"><span>Personas</span><span>Empresas</span><span>Verificar</span><strong style="color:#0a1633;font-weight:600">Metodología</strong></div>
+<span style="width:80px" aria-hidden="true"></span>
+</div>
+</nav>
+
+<div class="cont" style="padding-top:56px;padding-bottom:88px;display:flex;flex-direction:column;gap:28px">
+
+<header style="display:flex;flex-direction:column;gap:12px">
+<h1 style="font-size:clamp(40px,6vw,64px);line-height:1.05;letter-spacing:-0.045em">Metodología <span style="background:linear-gradient(180deg,transparent 62%,#b6f23a 62%,#b6f23a 92%,transparent 92%);padding:0 .05em">y fuentes</span></h1>
+<p class="gris" style="font-size:22px;line-height:1.4;letter-spacing:-0.01em;max-width:700px">La parte que un analista puede auditar: cómo se decide el nivel, de dónde sale cada umbral y qué fuente respalda cada dato.</p>
+<div><span class="fase">Metodología [v1.0] · [fecha] · Nuevo · Fase 1</span></div>
+</header>
+
+<section class="card">
+<div style="display:flex;gap:8px;align-items:center;justify-content:space-between;flex-wrap:wrap"><h2 style="font-size:26px;letter-spacing:-0.03em">Cómo se decide el nivel</h2><span class="hoy">Existe hoy</span></div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px">
+<div class="regla"><strong style="font-weight:600;color:#a1242b">Débil</strong><span class="gris">Si algún criterio no se cumple.</span></div>
+<div class="regla"><strong style="font-weight:600;color:#80540a">Condicionado</strong><span class="gris">Si ninguno falla pero alguno queda en atención.</span></div>
+<div class="regla"><strong style="font-weight:600;color:#17673a">Favorable</strong><span class="gris">Si todos los criterios con dato se cumplen.</span></div>
+<div class="regla"><strong style="font-weight:600">Faltan datos</strong><span class="gris">Si hay datos inválidos; un dato ausente no bloquea.</span></div>
+</div>
+</section>
+
+<section class="card">
+<div style="display:flex;gap:8px;align-items:center;justify-content:space-between;flex-wrap:wrap"><h2 style="font-size:26px;letter-spacing:-0.03em">Ficha técnica por indicador</h2><span class="fase">Nuevo · Fase 2</span></div>
+<p class="gris" style="font-size:15px">Una ficha por indicador, desplegable. Ejemplo de estructura:</p>
+<details open="" class="ind">
+<summary>[Nombre del indicador, por ejemplo: Cuota sobre ingreso]</summary>
+<div style="margin-top:10px">
+<div class="fila"><span class="gris">Fórmula</span><span>[numerador ÷ denominador]</span></div>
+<div class="fila"><span class="gris">Cómo leerlo</span><span>[una frase]</span></div>
+<div class="fila"><span class="gris">Umbral</span><span>[valor]</span></div>
+<div class="fila"><span class="gris">Origen del umbral</span><span><span class="est" style="background:#f2f6ff">[Norma]</span> o <span class="est" style="background:#f2f6ff">[Supuesto del proyecto]</span></span></div>
+<div class="fila"><span class="gris">Fuente</span><span>[enlace · fecha · confianza]</span></div>
+<div class="fila"><span class="gris">Versión en que cambió por última vez</span><span>[v1.0]</span></div>
+</div>
+</details>
+<details class="ind"><summary>[Otro indicador]</summary></details>
+<details class="ind"><summary>[Otro indicador]</summary></details>
+</section>
+
+<section class="card">
+<div style="display:flex;gap:8px;align-items:center;justify-content:space-between;flex-wrap:wrap"><h2 style="font-size:26px;letter-spacing:-0.03em">Registro de fuentes</h2><span class="fase">Nuevo · Fase 0</span></div>
+<p class="gris" style="font-size:15px">Cada dato de mercado y cada norma, con su fecha y su grado de certeza. Lo no verificado se rotula como tal.</p>
+<div style="overflow-x:auto;background:#fff;border-radius:20px;padding:8px 12px">
+<table class="tabla" style="min-width:760px">
+<thead><tr><th>Dato o norma</th><th>Fuente primaria</th><th>Fecha</th><th>Tipo</th><th>Confianza</th><th>Vigencia</th></tr></thead>
+<tbody>
+<tr><td>[Tasa referencial]</td><td>[URL oficial]</td><td>[fecha]</td><td>[hecho]</td><td>[alta]</td><td>[vigente]</td></tr>
+<tr><td>[Resolución]</td><td>[URL oficial]</td><td>[fecha]</td><td>[hecho]</td><td>[alta]</td><td>[vigente]</td></tr>
+<tr><td style="border-bottom:0">[Dato sin verificar]</td><td style="border-bottom:0">[pendiente]</td><td style="border-bottom:0">[fecha]</td><td style="border-bottom:0">[interpretación]</td><td style="border-bottom:0">[media]</td><td style="border-bottom:0">[no verificado]</td></tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(360px,1fr));gap:16px">
+
+<section class="card" style="gap:10px">
+<div style="display:flex;gap:8px;align-items:center;justify-content:space-between;flex-wrap:wrap"><h2 style="font-size:26px;letter-spacing:-0.03em">Casos de referencia</h2><span class="fase">Nuevo · Fase 1</span></div>
+<p class="gris" style="font-size:15px;line-height:1.5">Perfiles de personas y empresas con su resultado esperado, recalculados por una vía independiente al código y publicados para que cualquiera los repita.</p>
+<div class="fila"><span>[Caso 1: descripción corta]</span><span class="est">[nivel esperado]</span></div>
+<div class="fila"><span>[Caso 2: descripción corta]</span><span class="est">[nivel esperado]</span></div>
+<div class="fila"><span>[Caso 3: descripción corta]</span><span class="est">[nivel esperado]</span></div>
+</section>
+
+<section class="card" style="gap:10px">
+<div style="display:flex;gap:8px;align-items:center;justify-content:space-between;flex-wrap:wrap"><h2 style="font-size:26px;letter-spacing:-0.03em">Registro de cambios</h2><span class="fase">Nuevo · Fase 1</span></div>
+<p class="gris" style="font-size:15px;line-height:1.5">Cada cambio a una regla o a un umbral queda con versión, fecha y motivo, y lo aprueba el responsable de la metodología.</p>
+<div class="fila"><span>[v1.0] · [fecha]</span><span>[Primera versión publicada]</span></div>
+<div class="fila"><span>[v1.1] · [fecha]</span><span>[Cambio y motivo]</span></div>
+</section>
+
+</div>
+
+<section class="card" style="gap:10px">
+<div style="display:flex;gap:8px;align-items:center;justify-content:space-between;flex-wrap:wrap"><h2 style="font-size:26px;letter-spacing:-0.03em">Lo que esta herramienta no hace</h2><span class="hoy">Existe hoy</span></div>
+<p class="gris" style="font-size:17px;line-height:1.5;max-width:760px">No es un buró ni consulta historiales de nadie. No emite un score ni una calificación oficial. No aprueba créditos. No guarda lo que escribes.</p>
+</section>
+
+</div>
+
+<footer style="background:#f2f6ff;border-top:1px solid #d5ddef">
+<div class="cont" style="padding-top:24px;padding-bottom:32px;display:flex;flex-direction:column;gap:10px;font-size:12.5px;line-height:1.5;color:#55607a">
+<p>[Descargo corto: herramienta orientativa, no es un buró ni una oferta.]</p>
+<div style="display:flex;gap:20px;color:#34405c"><span>Privacidad</span><span>Términos</span><span>Aviso completo</span></div>
+</div>
+</footer>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":1700}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

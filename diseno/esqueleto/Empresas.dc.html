@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Empresas</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<style>
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,'SF Pro Display','SF Pro Text','Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;color:#0a1633;background-color:#fff;background-image:radial-gradient(50% 380px at 12% 0%,rgba(37,99,235,.10),transparent 70%),radial-gradient(45% 380px at 92% 0%,rgba(182,242,58,.24),transparent 70%);background-repeat:no-repeat;font-variant-numeric:tabular-nums;-webkit-font-smoothing:antialiased}
+*{box-sizing:border-box}
+p{margin:0}
+h1,h2,h3{margin:0;font-weight:600}
+a{color:#1d4ed8;text-decoration:none}
+.cont{max-width:1160px;margin:0 auto;padding:0 28px}
+.gris{color:#55607a}
+.card{background:#f2f6ff;border-radius:28px;padding:32px;display:flex;flex-direction:column;gap:20px}
+.fld{display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:500;color:#34405c}
+.in{height:52px;border:1px solid #d5ddef;border-radius:14px;padding:0 16px;font-size:19px;background:#fff;color:#0a1633;font-family:inherit}
+.in::placeholder{color:#55607a}
+.fase{font-size:12px;font-weight:600;color:#1e40af;background:#e4edff;border-radius:999px;padding:3px 10px;white-space:nowrap}
+.est{font-size:13px;font-weight:600;border-radius:999px;padding:4px 12px;white-space:nowrap;background:#e6ecf8;color:#34405c}
+.dim{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 0;border-top:1px solid #e6ecf8;font-size:18px;font-weight:500}
+.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:999px;padding:14px 28px;font-size:19px;font-weight:500;min-height:50px;background:linear-gradient(135deg,#2563eb,#1d4ed8);color:#fff}
+.kpi{background:#fff;border-radius:20px;padding:18px;display:flex;flex-direction:column;gap:4px}
+.pest{border:1px solid #d5ddef;border-radius:999px;padding:8px 16px;font-size:15px;font-weight:500;color:#34405c;background:#fff}
+</style>
+</helmet>
+
+<nav aria-label="Principal" style="background:#fff;border-bottom:1px solid #e6ecf8">
+<div class="cont" style="display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;min-height:52px;padding-top:6px;padding-bottom:6px">
+<strong style="font-size:17px;font-weight:600">¿Soy sujeto de crédito?</strong>
+<div style="display:flex;gap:28px;font-size:14px;color:#34405c;flex-wrap:wrap"><span>Personas</span><strong style="color:#0a1633;font-weight:600">Empresas</strong><span>Verificar</span><span>Metodología</span></div>
+<span style="width:80px" aria-hidden="true"></span>
+</div>
+</nav>
+
+<div class="cont" style="padding-top:56px;padding-bottom:88px;display:flex;flex-direction:column;gap:40px">
+
+<header style="display:flex;flex-direction:column;gap:10px">
+<h1 style="font-size:clamp(40px,6vw,64px);line-height:1.05;letter-spacing:-0.045em"><span style="background:linear-gradient(180deg,transparent 62%,#b6f23a 62%,#b6f23a 92%,transparent 92%);padding:0 .05em">Empresas</span></h1>
+<p class="gris" style="font-size:22px;line-height:1.4;letter-spacing:-0.01em;max-width:640px">[Una línea: escribe tus cifras y el resultado cambia al instante. Nada sale de tu navegador.]</p>
+</header>
+
+<div style="display:flex;gap:28px;flex-wrap:wrap;align-items:flex-start">
+
+<div style="flex:1 1 520px;min-width:0;display:flex;flex-direction:column;gap:16px">
+
+<div class="card">
+<h2 style="font-size:26px;letter-spacing:-0.03em">Tu empresa</h2>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px">
+<label class="fld">Actividad (CIIU)<input class="in" type="text" placeholder="[código o actividad]" readonly=""></label>
+<label class="fld">Tamaño<input class="in" type="text" placeholder="[micro, pequeña, mediana, grande]" readonly=""></label>
+<label class="fld">Años de operación<input class="in" type="text" placeholder="[años]" readonly=""></label>
+</div>
+</div>
+
+<div class="card">
+<div style="display:flex;justify-content:space-between;gap:8px;align-items:center;flex-wrap:wrap"><h2 style="font-size:26px;letter-spacing:-0.03em">Cierres anuales</h2><span class="fase">Nuevo · Fase 1</span></div>
+<div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center">
+<span class="pest" style="background:#1d4ed8;color:#fff;border-color:#1d4ed8">Cierre [año actual]</span>
+<span class="pest">Cierre [año anterior]</span>
+<span class="pest" style="color:#1d4ed8">+ Agregar cierre</span>
+</div>
+<p class="gris" style="font-size:14px;line-height:1.5">Con dos o más cierres, las razones usan promedios y se ve la tendencia en vez de una sola foto.</p>
+</div>
+
+<div class="card">
+<h2 style="font-size:26px;letter-spacing:-0.03em">Balance</h2>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px">
+<label class="fld">Activo corriente<input class="in" type="text" placeholder="[$]" readonly=""></label>
+<label class="fld">Pasivo corriente<input class="in" type="text" placeholder="[$]" readonly=""></label>
+<label class="fld">Activos totales<input class="in" type="text" placeholder="[$]" readonly=""></label>
+<label class="fld">Pasivos totales<input class="in" type="text" placeholder="[$]" readonly=""></label>
+<label class="fld">Patrimonio<input class="in" type="text" placeholder="[$]" readonly=""></label>
+</div>
+</div>
+
+<div class="card">
+<h2 style="font-size:26px;letter-spacing:-0.03em">Resultados</h2>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px">
+<label class="fld">Ventas<input class="in" type="text" placeholder="[$]" readonly=""></label>
+<label class="fld">Utilidad neta<input class="in" type="text" placeholder="[$]" readonly=""></label>
+<label class="fld">Gastos financieros<input class="in" type="text" placeholder="[$]" readonly=""></label>
+</div>
+</div>
+
+<div class="card">
+<div style="display:flex;justify-content:space-between;gap:8px;align-items:center;flex-wrap:wrap"><h2 style="font-size:26px;letter-spacing:-0.03em">Flujo de caja</h2><span class="fase">Nuevo · Fase 1</span></div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px">
+<label class="fld">Flujo operativo<input class="in" type="text" placeholder="[$]" readonly=""></label>
+<label class="fld">Servicio de deuda anual<input class="in" type="text" placeholder="[$]" readonly=""></label>
+</div>
+<p class="gris" style="font-size:14px;line-height:1.5">Alimenta el indicador de cobertura de deuda (DSCR).</p>
+</div>
+
+<div class="card">
+<h2 style="font-size:26px;letter-spacing:-0.03em">Cumplimiento</h2>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px">
+<label class="fld">Obligaciones tributarias<input class="in" type="text" placeholder="[Al día / Con atraso]" readonly=""></label>
+<label class="fld">Obligaciones laborales y de seguridad social<input class="in" type="text" placeholder="[Al día / Con atraso]" readonly=""></label>
+</div>
+</div>
+
+<div><a href="#" style="font-size:17px">Empezar en blanco ›</a></div>
+</div>
+
+<div style="flex:1 1 440px;min-width:0;display:flex;flex-direction:column;gap:16px">
+
+<div style="background:#fff;border-radius:32px;padding:32px;display:flex;flex-direction:column;gap:22px;box-shadow:0 24px 64px rgba(37,99,235,.14),0 2px 8px rgba(10,22,51,.05)">
+<div style="display:flex;justify-content:space-between;align-items:center;gap:8px"><span class="gris" style="font-size:15px;font-weight:500">Resultado en vivo</span><span class="fase">Valores de ejemplo</span></div>
+<div><span class="gris" style="font-size:15px;font-weight:500">Tu nivel</span><div style="font-size:52px;font-weight:600;letter-spacing:-0.04em;line-height:1.1">[Nivel]</div><p class="gris" style="font-size:17px;line-height:1.45;margin-top:4px">[Frase corta sobre lo que significa este nivel.]</p></div>
+<div aria-hidden="true" style="position:relative;padding-top:6px">
+<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:4px;height:10px"><span style="background:#e5484d;border-radius:999px"></span><span style="background:#f5a524;border-radius:999px"></span><span style="background:#30a46c;border-radius:999px"></span></div>
+<div style="position:absolute;left:calc(50% - 11px);top:-3px;width:22px;height:22px;border-radius:50%;background:#fff;box-shadow:0 0 0 3px #b6f23a,0 2px 8px rgba(10,22,51,.4)"></div>
+<div style="display:grid;grid-template-columns:repeat(3,1fr);font-size:13px;font-weight:500;color:#55607a;margin-top:14px"><span>Débil</span><span style="text-align:center">Condicionado</span><span style="text-align:right">Favorable</span></div>
+</div>
+<div>
+<div class="dim"><span>Liquidez</span><span class="est">[estado]</span></div>
+<div class="dim"><span>Solvencia</span><span class="est">[estado]</span></div>
+<div class="dim"><span>Rentabilidad</span><span class="est">[estado]</span></div>
+<div class="dim"><span>Cumplimiento</span><span class="est">[estado]</span></div>
+</div>
+<p class="gris" style="font-size:13px;line-height:1.5">Cada fila se despliega con sus criterios. No es un puntaje.</p>
+</div>
+
+<div class="card" style="padding:28px">
+<div style="display:flex;justify-content:space-between;gap:8px;align-items:center"><h3 style="font-size:22px;letter-spacing:-0.02em">Indicadores clave</h3><span class="fase">Nuevo · Fase 0</span></div>
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px">
+<div class="kpi"><span class="gris" style="font-size:13px">Razón corriente</span><strong style="font-size:28px;font-weight:600;letter-spacing:-0.03em">[ —— ]</strong><span class="gris" style="font-size:12.5px">[activo corriente ÷ pasivo corriente]</span></div>
+<div class="kpi"><span class="gris" style="font-size:13px">Endeudamiento</span><strong style="font-size:28px;font-weight:600;letter-spacing:-0.03em">[ —— ]</strong><span class="gris" style="font-size:12.5px">[pasivos ÷ activos]</span></div>
+<div class="kpi"><span class="gris" style="font-size:13px">Margen neto</span><strong style="font-size:28px;font-weight:600;letter-spacing:-0.03em">[ —— ]</strong><span class="gris" style="font-size:12.5px">[utilidad ÷ ventas]</span></div>
+<div class="kpi"><span class="gris" style="font-size:13px">DSCR · Fase 1</span><strong style="font-size:28px;font-weight:600;letter-spacing:-0.03em">[ —— ]</strong><span class="gris" style="font-size:12.5px">[flujo ÷ servicio de deuda]</span></div>
+</div>
+</div>
+
+<div class="card" style="padding:28px">
+<div style="display:flex;justify-content:space-between;gap:8px;align-items:center"><h3 style="font-size:22px;letter-spacing:-0.02em">¿Y si tus ventas bajan?</h3><span class="fase">Nuevo · Fase 1</span></div>
+<div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px">
+<div class="kpi" style="font-size:14px"><strong style="font-weight:600">Base</strong><span class="gris">[sin cambio]</span><span class="est" style="align-self:flex-start;margin-top:6px">[nivel]</span></div>
+<div class="kpi" style="font-size:14px"><strong style="font-weight:600">Moderado</strong><span class="gris">[caída]</span><span class="est" style="align-self:flex-start;margin-top:6px">[nivel]</span></div>
+<div class="kpi" style="font-size:14px"><strong style="font-weight:600">Severo</strong><span class="gris">[caída]</span><span class="est" style="align-self:flex-start;margin-top:6px">[nivel]</span></div>
+</div>
+<p style="font-size:16px;line-height:1.45"><strong style="font-weight:600">Cambio mínimo que mejora el veredicto:</strong> <span class="gris">[ejemplo: bajar el pasivo corriente en $ ——].</span></p>
+</div>
+
+<div class="card" style="padding:28px">
+<div style="display:flex;justify-content:space-between;gap:8px;align-items:center"><h3 style="font-size:22px;letter-spacing:-0.02em">Frente a tu sector</h3><span class="fase">Nuevo · Fase 3</span></div>
+<p class="gris" style="font-size:15px;line-height:1.5">Percentiles por actividad y tamaño, solo con al menos 30 empresas en la celda y la licencia confirmada.</p>
+<div aria-hidden="true" style="position:relative;height:40px;margin:4px 4px 0">
+<div style="position:absolute;left:0;right:0;top:16px;height:8px;border-radius:4px;background:#dde4f3"></div>
+<div style="position:absolute;left:25%;width:50%;top:16px;height:8px;background:#bfd3fb"></div>
+<div style="position:absolute;left:58%;top:5px;width:4px;height:30px;background:#2563eb;border-radius:2px"></div>
+</div>
+<div style="display:flex;justify-content:space-between;font-size:13px;color:#55607a"><span>p10</span><span>p25</span><span>p50</span><span>p75</span><span>p90</span></div>
+<p style="font-size:16px"><strong style="font-weight:600">[Tu empresa]</strong> <span class="gris">está [por encima o por debajo] de la mediana del sector en [indicador].</span></p>
+<p class="gris" style="font-size:13px;line-height:1.5">Sin licencia o con pocos datos, la tarjeta no se muestra y el resto del resultado no cambia.</p>
+</div>
+
+<div style="display:flex;gap:16px;align-items:center;flex-wrap:wrap;padding:4px 4px 0"><span class="btn">Generar informe</span><span class="fase">Nuevo · Fase 2</span></div>
+<p class="gris" style="font-size:13px;line-height:1.5;padding:0 4px">Vista para imprimir o guardar como PDF. Contiene los datos de tu empresa: nada se guarda ni se envía.</p>
+
+</div>
+</div>
+</div>
+
+<footer style="background:#f2f6ff;border-top:1px solid #d5ddef">
+<div class="cont" style="padding-top:24px;padding-bottom:32px;display:flex;flex-direction:column;gap:10px;font-size:12.5px;line-height:1.5;color:#55607a">
+<p>[Descargo corto: herramienta orientativa, no es un buró ni una oferta.]</p>
+<div style="display:flex;gap:20px;color:#34405c"><span>Privacidad</span><span>Términos</span><span>Aviso completo</span></div>
+</div>
+</footer>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":2300}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>
