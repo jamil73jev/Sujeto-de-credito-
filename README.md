@@ -5,6 +5,7 @@ Sitio público y gratuito para que personas y empresas de Ecuador se **autoeval�
 ## Plan y diseño
 
 - [`docs/plan-de-profesionalizacion.md`](docs/plan-de-profesionalizacion.md): plan por fases (0 a 5), alcance y línea roja, brechas frente a nivel buró, hitos, métricas y riesgos.
+- [`docs/diseno.md`](docs/diseno.md): mapa del producto, portada azul + lima y línea gráfica, con capturas.
 - [`diseno/esqueleto/`](diseno/esqueleto/): fuentes del esqueleto de diseño pantalla por pantalla.
 - [`prototipos/`](prototipos/): versiones HTML de un solo archivo para revisar sin instalar nada.
 

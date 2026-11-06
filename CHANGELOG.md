@@ -4,6 +4,9 @@ Formato basado en [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/).
 
 ## [Sin publicar]
 
+### Agregado
+- `docs/diseno.md` con el mapa del producto, la portada «azul + lima» y la línea gráfica (colores, tipografía, componentes y reglas), con capturas en `docs/img/`.
+
 ## [0.1.0] - 2026-11-05
 
 Primera versión del repositorio: sitio de elegibilidad de crédito para personas y empresas, preparado para una beta cerrada.

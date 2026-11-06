@@ -17,4 +17,5 @@ Notas:
 
 - Los textos entre corchetes (`[Nivel]`, `[$]`, …) son marcadores, no datos.
 - Los `.dc.html` son fuentes del editor de diseño y cargan `./support.js`, que no se incluye; para verlos con el editor, abre el lienzo original. Una versión autocontenida para el navegador está en [`prototipos/esqueleto-sujeto-de-credito-ecuador.html`](../../prototipos/esqueleto-sujeto-de-credito-ecuador.html).
+- Resumen escrito con capturas: [`docs/diseno.md`](../../docs/diseno.md).
 - La app real vive en `src/`; este diseño es la referencia visual y de alcance.
